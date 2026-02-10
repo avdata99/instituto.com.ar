@@ -108,6 +108,99 @@ def parse_feed(feed_file, limit=3, require_image=False):
 
     return items
 
+
+def parse_youtube_feed(feed_file, channel_info, limit=15):
+    """Parsea un feed Atom de YouTube y retorna videos
+
+    Args:
+        feed_file: Ruta al archivo XML del feed
+        channel_info: Dict con 'filter_keywords', 'name' del canal
+        limit: Videos a buscar antes de filtrar
+
+    Returns:
+        Lista de dicts con: title, link, description, pub_date, pub_date_raw,
+                           image, author, video_id
+    """
+    try:
+        with open(feed_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Limpiar contenido (igual que parse_feed)
+        xml_start = content.find('<?xml')
+        if xml_start > 0:
+            content = content[xml_start:]
+
+        root = ET.fromstring(content)
+
+        # Namespaces de YouTube Atom feed
+        ns = {
+            'atom': 'http://www.w3.org/2005/Atom',
+            'media': 'http://search.yahoo.com/mrss/',
+            'yt': 'http://www.youtube.com/xml/schemas/2015'
+        }
+
+        videos = []
+        entries = root.findall('atom:entry', ns)[:limit]
+
+        for entry in entries:
+            # Extraer datos
+            title_elem = entry.find('atom:title', ns)
+            title = title_elem.text if title_elem is not None else ''
+
+            link_elem = entry.find('atom:link[@rel="alternate"]', ns)
+            link = link_elem.get('href') if link_elem is not None else ''
+
+            published_elem = entry.find('atom:published', ns)
+            published = published_elem.text if published_elem is not None else ''
+
+            author_elem = entry.find('atom:author/atom:name', ns)
+            author = author_elem.text if author_elem is not None else channel_info['name']
+
+            thumbnail_elem = entry.find('.//media:thumbnail', ns)
+            thumbnail_url = thumbnail_elem.get('url') if thumbnail_elem is not None else None
+
+            desc_elem = entry.find('.//media:description', ns)
+            description = desc_elem.text if desc_elem is not None else ''
+
+            video_id_elem = entry.find('yt:videoId', ns)
+            video_id = video_id_elem.text if video_id_elem is not None else ''
+
+            # Fallback para thumbnail
+            if not thumbnail_url and video_id:
+                thumbnail_url = f'https://i.ytimg.com/vi/{video_id}/hqdefault.jpg'
+
+            # Filtrar por keywords si es necesario
+            if channel_info['filter_keywords']:
+                title_lower = title.lower()
+                if not any(keyword.lower() in title_lower for keyword in VIDEO_FILTER_KEYWORDS):
+                    continue
+
+            # Limpiar descripción
+            clean_desc = clean_html(description)
+
+            videos.append({
+                'title': title,
+                'link': link,
+                'description': clean_desc[:MAX_DESCRIPCION] + '...' if len(clean_desc) > MAX_DESCRIPCION else clean_desc,
+                'pub_date': format_youtube_date(published),
+                'pub_date_raw': published,  # Para ordenamiento
+                'image': thumbnail_url,
+                'author': author,
+                'video_id': video_id
+            })
+
+        return videos
+
+    except FileNotFoundError:
+        print(f"  ⚠ Feed no encontrado: {feed_file}")
+        return []
+    except ET.ParseError as e:
+        print(f"  ⚠ Error parseando XML: {e}")
+        return []
+    except Exception as e:
+        print(f"  ⚠ Error: {e}")
+        return []
+
 def extract_first_image(html_content):
     """Extrae la URL de la primera imagen del contenido HTML"""
     if not html_content:
@@ -142,7 +235,23 @@ def format_date(date_str):
     except:
         return date_str
 
-def generate_html(noticias, fotos, agenda=[]):
+def format_youtube_date(date_str):
+    """Formatea fecha ISO 8601 de YouTube a formato legible
+
+    YouTube usa: 2026-02-09T21:35:27+00:00
+    Retorna: 09/02/2026
+    """
+    if not date_str:
+        return ''
+    try:
+        # Eliminar timezone y parsear
+        date_clean = date_str.split('+')[0].split('Z')[0]
+        dt = datetime.strptime(date_clean, '%Y-%m-%dT%H:%M:%S')
+        return dt.strftime('%d/%m/%Y')
+    except:
+        return date_str
+
+def generate_html(noticias, fotos, agenda=[], videos=[]):
     """Genera el HTML del sitio"""
 
     # Calcular ancho total de rayas
@@ -411,6 +520,44 @@ def generate_html(noticias, fotos, agenda=[]):
             margin-top: auto;
         }}
 
+        /* Estilos para videos */
+        .video-card {{
+            min-height: 340px;
+        }}
+
+        .video-card .card-img-top {{
+            height: {ALTURA_IMAGEN_VIDEO}px;
+            object-fit: cover;
+            background: #000;
+        }}
+
+        .video-card .card-body {{
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+        }}
+
+        .video-card .card-title {{
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            flex-grow: 1;
+        }}
+
+        .video-card .text-muted {{
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }}
+
+        .video-card:hover {{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(227, 6, 19, 0.25);
+        }}
+
+        .video-card:hover .card-img-top {{
+            opacity: 0.9;
+        }}
+
         @media (max-width: 768px) {{
             h1 {{
                 font-size: 1.8rem;
@@ -446,6 +593,39 @@ def generate_html(noticias, fotos, agenda=[]):
     </div>
 
     <div class="container py-4">
+'''
+
+    # Agregar sección de videos (PRIMERO - arriba del todo)
+    if MOSTRAR_VIDEOS and videos:
+        html_content += f'''
+        <!-- Videos Section -->
+        <h2 class="section-title">{TITULO_VIDEOS}</h2>
+        <div class="row g-4 mb-5">
+'''
+        for video in videos:
+            # Thumbnail del video
+            if video['image']:
+                img_html = f'<img src="{video["image"]}" class="card-img-top" alt="{video["title"]}">'
+            else:
+                img_html = '<div class="card-img-top d-flex align-items-center justify-content-center bg-dark"><span style="font-size: 3rem; filter: brightness(1.2);">▶️</span></div>'
+
+            html_content += f'''
+            <div class="col-md-{COLUMNAS_VIDEOS}">
+                <div class="card video-card">
+                    {img_html}
+                    <div class="card-body">
+                        <small class="card-date-top">{video['pub_date']}</small>
+                        <h5 class="card-title">{video['title']}</h5>
+                        <p class="text-muted">📺 {video['author']}</p>
+                        <a href="{video['link']}" class="btn-instituto" target="_blank" rel="noopener">
+                            {TEXTO_BOTON_VIDEOS}
+                        </a>
+                    </div>
+                </div>
+            </div>
+'''
+        html_content += '''
+        </div>
 '''
 
     # Agregar sección de noticias
@@ -599,6 +779,25 @@ def main():
         output_file = feed_files[feed_name]
         download_feed(feed_url, output_file)
 
+    # Descargar feeds de YouTube
+    youtube_feed_files = {}
+    if MOSTRAR_VIDEOS:
+        print("\n📥 Descargando feeds de YouTube...")
+        youtube_feeds_dir = feeds_dir / 'youtube'
+        youtube_feeds_dir.mkdir(exist_ok=True)
+
+        for handle, info in YOUTUBE_CHANNELS.items():
+            channel_id = info['channel_id']
+            feed_url = f'https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}'
+            output_file = youtube_feeds_dir / f'{handle}.xml'
+
+            print(f"\n  Canal: {info['name']}")
+            download_feed(feed_url, output_file)
+
+            # Guardar referencia si el archivo existe (descarga exitosa o caché)
+            if output_file.exists():
+                youtube_feed_files[handle] = output_file
+
     print()
 
     # Parsear feeds
@@ -624,9 +823,36 @@ def main():
             print("   (Filtrando solo eventos con imágenes)")
         agenda = parse_feed(feed_files['agenda'], limit=LIMITE_AGENDA, require_image=SOLO_AGENDA_CON_IMAGEN)
 
+    # Parsear videos de YouTube
+    videos = []
+    if MOSTRAR_VIDEOS:
+        print("\n🎥 Parseando videos de YouTube...")
+
+        all_videos = []
+        for handle, feed_file in youtube_feed_files.items():
+            channel_info = YOUTUBE_CHANNELS[handle]
+            print(f"  → {channel_info['name']}...", end=' ')
+
+            videos_from_channel = parse_youtube_feed(
+                feed_file,
+                channel_info,
+                limit=YOUTUBE_VIDEOS_PER_CHANNEL_FETCH
+            )
+
+            filter_status = "(filtrado)" if channel_info['filter_keywords'] else "(todos)"
+            print(f"{len(videos_from_channel)} videos {filter_status}")
+
+            all_videos.extend(videos_from_channel)
+
+        # Ordenar por fecha (más nuevos primero) y limitar
+        all_videos.sort(key=lambda x: x['pub_date_raw'], reverse=True)
+        videos = all_videos[:LIMITE_VIDEOS]
+
+        print(f"\n  ✓ Total de videos a mostrar: {len(videos)}")
+
     # Generar HTML
-    print("🔨 Generando HTML...")
-    html = generate_html(noticias, fotos, agenda)
+    print("\n🔨 Generando HTML...")
+    html = generate_html(noticias, fotos, agenda, videos)
 
     # Guardar archivo
     output_file = output_dir / 'index.html'

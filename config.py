@@ -94,6 +94,71 @@ OG_TITLE = 'Instituto - Sitio del Hincha'
 OG_DESCRIPTION = 'Las últimas noticias del albirrojo'
 OG_IMAGE = 'https://institutoacc.com.ar/wp-content/uploads/2023/logo-instituto.png'  # Cambiar por tu logo
 
+# ===== CONFIGURACIÓN DE VIDEOS DE YOUTUBE =====
+
+# Cantidad de videos a mostrar en total
+LIMITE_VIDEOS = 12  # 3 filas de 4 videos
+
+# Canales de YouTube - Mapeo de handles a channel_ids
+# IMPORTANTE: Los channel_ids reales deben obtenerse con el script: bash obtener_channel_ids.sh
+YOUTUBE_CHANNELS = {
+    # Canal oficial - TODOS los videos (sin filtrar)
+    'InstitutoACC': {
+        'channel_id': 'UCvv_C1t_9MO0i2uFnQUdRKQ',
+        'filter_keywords': False,
+        'name': 'Instituto ACC Oficial'
+    },
+
+    # Canales de medios - SOLO videos con "Instituto" o "La Gloria" en el título
+    'pablochucrel7': {
+        'channel_id': 'UCi7YRXPr9usUa8e1sj-17aQ',
+        'filter_keywords': True,
+        'name': 'Pablo Giralt'
+    },
+    'joavalenzuela': {
+        'channel_id': 'UCATmn2iTqouCLhW2iQP47iA',
+        'filter_keywords': True,
+        'name': 'Joa Valenzuela'
+    },
+    'TNTSportsAR': {
+        'channel_id': 'UCI5RY8G0ar-hLIaUJvx58Lw',
+        'filter_keywords': True,
+        'name': 'TNT Sports Argentina'
+    },
+    'tycsports': {
+        'channel_id': 'UC72ZaBKI-Bo5fjmWEYonhJw',
+        'filter_keywords': True,
+        'name': 'TyC Sports'
+    },
+    'RadioSuquia': {
+        'channel_id': 'UCcl6jt4C1zpWjYsOHhDjNhQ',
+        'filter_keywords': True,
+        'name': 'Radio Suquía'
+    },
+    'cadena3': {
+        'channel_id': 'UCNxohbqfDp8YxW_Mji2XMHA',
+        'filter_keywords': True,
+        'name': 'Cadena 3'
+    }
+}
+
+# Palabras clave para filtrar (case-insensitive, OR lógico)
+VIDEO_FILTER_KEYWORDS = ['Instituto', 'La Gloria']
+
+# Videos a buscar por canal antes de filtrar (para canales con filter_keywords=True)
+YOUTUBE_VIDEOS_PER_CHANNEL_FETCH = 15
+
+# Toggle para habilitar/deshabilitar sección
+MOSTRAR_VIDEOS = True
+
+# Textos de la sección
+TITULO_VIDEOS = '🎥 Videos de Instituto'
+TEXTO_BOTON_VIDEOS = 'Ver en YouTube →'
+
+# Layout
+COLUMNAS_VIDEOS = 3  # 12/3 = 4 columnas
+ALTURA_IMAGEN_VIDEO = 180
+
 # ===== NOTAS =====
 #
 # Para aplicar los cambios:

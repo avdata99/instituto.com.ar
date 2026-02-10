@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCvv_C1t_9MO0i2uFnQUdRKQ"/>
+ <id>yt:channel:vv_C1t_9MO0i2uFnQUdRKQ</id>
+ <yt:channelId>vv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+ <title>Instituto ACC</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ"/>
+ <author>
+  <name>Instituto ACC</name>
+  <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+ </author>
+ <published>2014-07-29T19:51:12+00:00</published>
+ <entry>
+  <id>yt:video:WdLpNCFUe9k</id>
+  <yt:videoId>WdLpNCFUe9k</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Conferencia de prensa - Bruno Martelotto y Daniel Jiménez - FECHA 3</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=WdLpNCFUe9k"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2026-02-04T14:47:22+00:00</published>
+  <updated>2026-02-04T17:50:41+00:00</updated>
+  <media:group>
+   <media:title>Conferencia de prensa - Bruno Martelotto y Daniel Jiménez - FECHA 3</media:title>
+   <media:content url="https://www.youtube.com/v/WdLpNCFUe9k?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/WdLpNCFUe9k/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="20" average="5.00" min="1" max="5"/>
+    <media:statistics views="497"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:C7Z0eDQNTx4</id>
+  <yt:videoId>C7Z0eDQNTx4</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Camisetas Givova 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=C7Z0eDQNTx4"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2026-02-02T20:37:32+00:00</published>
+  <updated>2026-02-02T22:36:00+00:00</updated>
+  <media:group>
+   <media:title>Camisetas Givova 2026</media:title>
+   <media:content url="https://www.youtube.com/v/C7Z0eDQNTx4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/C7Z0eDQNTx4/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="28" average="5.00" min="1" max="5"/>
+    <media:statistics views="184"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:VOrHFiL1gWQ</id>
+  <yt:videoId>VOrHFiL1gWQ</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Conferencia de prensa - Daniel Oldrá - FECHA 1</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=VOrHFiL1gWQ"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2026-01-23T16:08:55+00:00</published>
+  <updated>2026-01-26T23:52:40+00:00</updated>
+  <media:group>
+   <media:title>Conferencia de prensa - Daniel Oldrá - FECHA 1</media:title>
+   <media:content url="https://www.youtube.com/v/VOrHFiL1gWQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/VOrHFiL1gWQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="12" average="5.00" min="1" max="5"/>
+    <media:statistics views="597"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:97927ExtYj8</id>
+  <yt:videoId>97927ExtYj8</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Segundo amistoso de pretemporada - Estudiantes Rio IV</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=97927ExtYj8"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2026-01-17T18:10:13+00:00</published>
+  <updated>2026-01-23T07:29:46+00:00</updated>
+  <media:group>
+   <media:title>Segundo amistoso de pretemporada - Estudiantes Rio IV</media:title>
+   <media:content url="https://www.youtube.com/v/97927ExtYj8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/97927ExtYj8/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="94" average="5.00" min="1" max="5"/>
+    <media:statistics views="3492"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:CrnK9rogr1E</id>
+  <yt:videoId>CrnK9rogr1E</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Primer amistoso de pretemporada - Central Córdoba (SdE)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=CrnK9rogr1E"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2026-01-14T19:33:26+00:00</published>
+  <updated>2026-01-23T00:11:49+00:00</updated>
+  <media:group>
+   <media:title>Primer amistoso de pretemporada - Central Córdoba (SdE)</media:title>
+   <media:content url="https://www.youtube.com/v/CrnK9rogr1E?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/CrnK9rogr1E/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="152" average="5.00" min="1" max="5"/>
+    <media:statistics views="4089"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:wM-b5qGuy1U</id>
+  <yt:videoId>wM-b5qGuy1U</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Conferencia de prensa de Daniel Oldrá - Instituto vs Talleres</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=wM-b5qGuy1U"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-11-17T15:59:03+00:00</published>
+  <updated>2025-12-18T14:43:41+00:00</updated>
+  <media:group>
+   <media:title>Conferencia de prensa de Daniel Oldrá - Instituto vs Talleres</media:title>
+   <media:content url="https://www.youtube.com/v/wM-b5qGuy1U?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/wM-b5qGuy1U/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="8" average="5.00" min="1" max="5"/>
+    <media:statistics views="706"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:cAml1Li4vvs</id>
+  <yt:videoId>cAml1Li4vvs</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Instituto juega la segunda temporada de Challengers 11x11 Argentina</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=cAml1Li4vvs"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-11-12T15:07:48+00:00</published>
+  <updated>2025-12-12T14:34:23+00:00</updated>
+  <media:group>
+   <media:title>Instituto juega la segunda temporada de Challengers 11x11 Argentina</media:title>
+   <media:content url="https://www.youtube.com/v/cAml1Li4vvs?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/cAml1Li4vvs/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Instituto juega la segunda temporada de Challengers 11x11 Argentina por la Fecha 5 ante Huracan eSports y la Fecha 6 ante San Miguel eSports</media:description>
+   <media:community>
+    <media:starRating count="14" average="5.00" min="1" max="5"/>
+    <media:statistics views="213"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:dtoQfeLP9hw</id>
+  <yt:videoId>dtoQfeLP9hw</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Instituto juega la segunda temporada de Challengers 11x11 Argentina</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=dtoQfeLP9hw"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-11-12T01:33:26+00:00</published>
+  <updated>2025-12-12T14:32:29+00:00</updated>
+  <media:group>
+   <media:title>Instituto juega la segunda temporada de Challengers 11x11 Argentina</media:title>
+   <media:content url="https://www.youtube.com/v/dtoQfeLP9hw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/dtoQfeLP9hw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Instituto juega la segunda temporada de Challengers 11x11 Argentina por la Fecha 5 ante Huracan eSports y la Fecha 6 ante San Miguel eSports</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="59"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:zIc9qJpArGM</id>
+  <yt:videoId>zIc9qJpArGM</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Tercera piel albirroja</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=zIc9qJpArGM"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-10-30T21:08:08+00:00</published>
+  <updated>2025-12-18T09:10:44+00:00</updated>
+  <media:group>
+   <media:title>Tercera piel albirroja</media:title>
+   <media:content url="https://www.youtube.com/v/zIc9qJpArGM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/zIc9qJpArGM/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="15" average="5.00" min="1" max="5"/>
+    <media:statistics views="264591"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:3gPygSeqzVo</id>
+  <yt:videoId>3gPygSeqzVo</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>PRESENTACION TERCERA CAMISETA</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=3gPygSeqzVo"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-10-30T16:38:46+00:00</published>
+  <updated>2026-01-06T15:17:17+00:00</updated>
+  <media:group>
+   <media:title>PRESENTACION TERCERA CAMISETA</media:title>
+   <media:content url="https://www.youtube.com/v/3gPygSeqzVo?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/3gPygSeqzVo/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="206" average="5.00" min="1" max="5"/>
+    <media:statistics views="4047"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:TwAazdCnIs0</id>
+  <yt:videoId>TwAazdCnIs0</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>𝐉𝐮𝐠𝐚𝐦𝐨𝐬 𝐝𝐨𝐧𝐝𝐞 𝐬𝐞𝐚, 𝐩𝐞𝐫𝐨 𝐜𝐨𝐧 𝐥𝐨𝐬 𝐦𝐢𝐬𝐦𝐨𝐬 𝐜𝐨𝐥𝐨𝐫𝐞𝐬 🇦🇹🔝🔥</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/TwAazdCnIs0"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-10-19T02:36:44+00:00</published>
+  <updated>2025-11-18T15:09:18+00:00</updated>
+  <media:group>
+   <media:title>𝐉𝐮𝐠𝐚𝐦𝐨𝐬 𝐝𝐨𝐧𝐝𝐞 𝐬𝐞𝐚, 𝐩𝐞𝐫𝐨 𝐜𝐨𝐧 𝐥𝐨𝐬 𝐦𝐢𝐬𝐦𝐨𝐬 𝐜𝐨𝐥𝐨𝐫𝐞𝐬 🇦🇹🔝🔥</media:title>
+   <media:content url="https://www.youtube.com/v/TwAazdCnIs0?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/TwAazdCnIs0/hqdefault.jpg" width="480" height="360"/>
+   <media:description>𝗚𝗜𝗩𝗢𝗩𝗔 viste nuestra temporada completa 2025/26 con la nueva indumentaria de básquet.</media:description>
+   <media:community>
+    <media:starRating count="9" average="5.00" min="1" max="5"/>
+    <media:statistics views="206"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:JC0QygAcB58</id>
+  <yt:videoId>JC0QygAcB58</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>𝑳𝒂 𝒂𝒍𝒆𝒈𝒓𝒊́𝒂 𝒅𝒆 𝒆𝒔𝒕𝒆 𝒃𝒂𝒓𝒓𝒊𝒐 🇦🇹</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/JC0QygAcB58"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-10-16T03:00:32+00:00</published>
+  <updated>2025-11-15T15:00:58+00:00</updated>
+  <media:group>
+   <media:title>𝑳𝒂 𝒂𝒍𝒆𝒈𝒓𝒊́𝒂 𝒅𝒆 𝒆𝒔𝒕𝒆 𝒃𝒂𝒓𝒓𝒊𝒐 🇦🇹</media:title>
+   <media:content url="https://www.youtube.com/v/JC0QygAcB58?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/JC0QygAcB58/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="29" average="5.00" min="1" max="5"/>
+    <media:statistics views="361"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:H9MasEK9AIs</id>
+  <yt:videoId>H9MasEK9AIs</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Instituto 2 Atlético Tucumán 0 - Clausura 2025</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=H9MasEK9AIs"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-10-13T15:52:06+00:00</published>
+  <updated>2025-11-13T14:25:16+00:00</updated>
+  <media:group>
+   <media:title>Instituto 2 Atlético Tucumán 0 - Clausura 2025</media:title>
+   <media:content url="https://www.youtube.com/v/H9MasEK9AIs?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/H9MasEK9AIs/hqdefault.jpg" width="480" height="360"/>
+   <media:description>El compacto de la victoria albirroja con goles de Jhon Córdoba y Gastón Lodico.</media:description>
+   <media:community>
+    <media:starRating count="17" average="5.00" min="1" max="5"/>
+    <media:statistics views="253"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:HtZ-hMxztg4</id>
+  <yt:videoId>HtZ-hMxztg4</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>Conferencia de Prensa de Daniel Oldrá - Instituto vs Atlético Tucumán</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=HtZ-hMxztg4"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-10-13T15:30:28+00:00</published>
+  <updated>2025-11-13T14:34:26+00:00</updated>
+  <media:group>
+   <media:title>Conferencia de Prensa de Daniel Oldrá - Instituto vs Atlético Tucumán</media:title>
+   <media:content url="https://www.youtube.com/v/HtZ-hMxztg4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/HtZ-hMxztg4/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Las declaraciones del DT albirrojo tras la victoria ante el Decano.</media:description>
+   <media:community>
+    <media:starRating count="15" average="5.00" min="1" max="5"/>
+    <media:statistics views="1454"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:NQJ-kEo26cw</id>
+  <yt:videoId>NQJ-kEo26cw</yt:videoId>
+  <yt:channelId>UCvv_C1t_9MO0i2uFnQUdRKQ</yt:channelId>
+  <title>¡2 DE 2 GLORIA! 💪🏻</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/NQJ-kEo26cw"/>
+  <author>
+   <name>Instituto ACC</name>
+   <uri>https://www.youtube.com/channel/UCvv_C1t_9MO0i2uFnQUdRKQ</uri>
+  </author>
+  <published>2025-09-30T14:43:30+00:00</published>
+  <updated>2025-10-31T16:47:51+00:00</updated>
+  <media:group>
+   <media:title>¡2 DE 2 GLORIA! 💪🏻</media:title>
+   <media:content url="https://www.youtube.com/v/NQJ-kEo26cw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/NQJ-kEo26cw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>El doble sobre el final de Keylan Boone para el triunfo de la Gloria por 73-71 ante Olímpico. ¡Festeja Instituto, que comenzó la Liga Nacional 25/26 con dos victorias en Santiago del Estero!</media:description>
+   <media:community>
+    <media:starRating count="30" average="5.00" min="1" max="5"/>
+    <media:statistics views="1576"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>

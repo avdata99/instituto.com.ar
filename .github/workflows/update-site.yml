@@ -1,0 +1,45 @@
+name: Update Instituto Site
+
+on:
+  # Ejecutar cada jueves a las 10:00 AM UTC
+  schedule:
+    - cron: '0 10 * * 4'  # 0 10 * * 4 = 10:00 AM UTC cada jueves
+
+  # Permitir ejecución manual desde GitHub
+  workflow_dispatch:
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Download feeds and build site
+        run: |
+          echo "Ejecutando build.py..."
+          python3 build.py
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code docs/ || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add docs/
+          git commit -m "🤖 Actualización automática del sitio - $(date +'%Y-%m-%d %H:%M')"
+          git push
+
+      - name: No changes detected
+        if: steps.git-check.outputs.changes != 'true'
+        run: echo "✅ No hay cambios en el sitio"
