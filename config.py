@@ -119,7 +119,7 @@ YOUTUBE_CHANNELS = {
     'pablochucrel7': {
         'channel_id': 'UCi7YRXPr9usUa8e1sj-17aQ',
         'filter_keywords': True,
-        'name': 'Pablo Giralt'
+        'name': 'Pablo Chucrel'
     },
     'joavalenzuela': {
         'channel_id': 'UCATmn2iTqouCLhW2iQP47iA',
@@ -145,6 +145,21 @@ YOUTUBE_CHANNELS = {
         'channel_id': 'UCNxohbqfDp8YxW_Mji2XMHA',
         'filter_keywords': True,
         'name': 'Cadena 3'
+    },
+    'showsports': {  # https://www.youtube.com/@CanalShowsportOficial
+        'channel_id': 'UC39LQlfIVgrVjlyjf4f4xiw',
+        'filter_keywords': True,
+        'name': 'ShowSports'
+    },
+    'lavoz': {  # https://www.youtube.com/lavozcomar
+        'channel_id': 'UCluV_ArZV6NOdQIWiXTJx3g',
+        'filter_keywords': True,
+        'name': 'La Voz'
+    },
+    'golandpop': {  # https://www.youtube.com/@golandpop
+        'channel_id': 'UCcXLIwBDN3UewgfqzVSoCnw',
+        'filter_keywords': True,
+        'name': 'Gol&Pop'
     }
 }
 

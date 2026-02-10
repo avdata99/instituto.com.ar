@@ -1226,14 +1226,34 @@ def main():
     except NameError:
         base_url = 'https://instituto.github.io'
 
-    sitemap_xml = generate_sitemap(base_url, video_slugs)
+    # Escanear TODOS los videos existentes en el directorio (incluye videos históricos)
+    videos_dir = output_dir / 'videos'
+    all_video_slugs = []
+    if videos_dir.exists():
+        for video_dir in videos_dir.iterdir():
+            if video_dir.is_dir() and (video_dir / 'index.html').exists():
+                all_video_slugs.append(video_dir.name)
+
+    # Ordenar alfabéticamente para consistencia
+    all_video_slugs.sort()
+
+    sitemap_xml = generate_sitemap(base_url, all_video_slugs)
     sitemap_file = output_dir / 'sitemap.xml'
     sitemap_file.write_text(sitemap_xml, encoding='utf-8')
-    print(f"✓ Sitemap generado con {len(video_slugs) + 1} URLs")
+
+    # Calcular cuántos videos históricos hay
+    historical_count = len(all_video_slugs) - len(video_slugs)
+    if historical_count > 0:
+        print(f"✓ Sitemap generado con {len(all_video_slugs) + 1} URLs ({len(video_slugs)} actuales + {historical_count} históricos)")
+    else:
+        print(f"✓ Sitemap generado con {len(all_video_slugs) + 1} URLs")
 
     print(f"\n✅ Sitio generado exitosamente en: {output_dir.absolute()}")
     print(f"   📄 Página principal: {output_file}")
-    print(f"   🎥 Videos: {len(video_slugs)} páginas en /videos/")
+    if historical_count > 0:
+        print(f"   🎥 Videos: {len(all_video_slugs)} páginas totales ({len(video_slugs)} actualizadas, {historical_count} históricas preservadas)")
+    else:
+        print(f"   🎥 Videos: {len(video_slugs)} páginas en /videos/")
     print(f"   🗺️  Sitemap: {sitemap_file}")
     print(f"\n🌐 Abrí {output_file} en tu navegador para ver el resultado!")
 
