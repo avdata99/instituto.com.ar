@@ -6,9 +6,9 @@ Modificá estos valores para personalizar el sitio sin tocar build.py
 # ===== CONFIGURACIÓN DE CONTENIDO =====
 
 # Cantidad de items a mostrar de cada feed
-LIMITE_NOTICIAS = 3
+LIMITE_NOTICIAS = 9  # Mostrará con y sin fotos de forma elegante
 LIMITE_FOTOS = 3
-LIMITE_AGENDA = 3
+LIMITE_AGENDA = 6  # 2 filas de 3 elementos
 
 # URLs de los feeds RSS (se descargan automáticamente al ejecutar build.py)
 FEED_URLS = {
@@ -16,7 +16,7 @@ FEED_URLS = {
     'fotos': 'https://institutoacc.com.ar/index.php/category/galeria-de-fotos/feed/',
     'agenda': 'https://institutoacc.com.ar/index.php/category/agenda-deportiva/feed/'
 }
-DOWNLOAD_FEED = True
+DOWNLOAD_FEED = False
 
 # ===== CONFIGURACIÓN DE COLORES =====
 
@@ -56,8 +56,9 @@ ANCHO_RAYA_BLANCA = 120
 
 # Layout de columnas (Bootstrap)
 # Valores posibles: 12, 6, 4, 3 (12=1 col, 6=2 cols, 4=3 cols, 3=4 cols)
-COLUMNAS_NOTICIAS = 6  # 2 columnas
+COLUMNAS_NOTICIAS = 4  # 3 columnas
 COLUMNAS_FOTOS = 4     # 3 columnas
+COLUMNAS_AGENDA = 4     # 3 columnas
 
 # ===== CONFIGURACIÓN DE FOOTER =====
 
@@ -74,7 +75,12 @@ MAX_DESCRIPCION = 200
 # Habilitar/deshabilitar secciones
 MOSTRAR_NOTICIAS = True
 MOSTRAR_FOTOS = True
-MOSTRAR_AGENDA = False  # Cambiar a True para mostrar agenda
+MOSTRAR_AGENDA = True  # Mostrar agenda deportiva
+
+# Filtros de contenido
+SOLO_NOTICIAS_CON_IMAGEN = False  # Mostrar todas las noticias (con y sin imagen)
+SOLO_FOTOS_CON_IMAGEN = False     # Las galerías siempre tienen imágenes
+SOLO_AGENDA_CON_IMAGEN = False    # Algunos eventos pueden no tener imagen
 
 # ===== META TAGS (SEO) =====
 

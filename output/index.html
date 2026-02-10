@@ -117,10 +117,24 @@
         }
 
         .card-date {
-            color: #888;
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0.8rem;
             display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-date-top {
+            color: var(--instituto-rojo);
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
         }
 
         .btn-instituto {
@@ -199,6 +213,61 @@
             font-size: 1rem;
         }
 
+        /* Estilos para noticias sin imágenes */
+        .noticia-sin-imagen {
+            min-height: 200px;
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            border-left: 4px solid var(--instituto-rojo);
+        }
+
+        .noticia-sin-imagen .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .noticia-sin-imagen .card-title {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .noticia-sin-imagen .card-text {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        /* Estilos para agenda sin imágenes */
+        .agenda-card {
+            min-height: 200px;
+            border-left: 4px solid var(--instituto-rojo);
+        }
+
+        .agenda-card .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .agenda-card .card-title {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .agenda-card .card-text {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .agenda-card .card-date {
+            margin-top: auto;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8rem;
@@ -229,13 +298,12 @@
         <h2 class="section-title">📰 Últimas Noticias</h2>
         <div class="row g-4 mb-5">
 
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-img-top d-flex align-items-center justify-content-center bg-light"><span style="font-size: 3rem;">📰</span></div>
+            <div class="col-md-4">
+                <div class="card noticia-sin-imagen">
                     <div class="card-body">
+                        <small class="card-date-top">09/02/2026</small>
                         <h5 class="card-title">BCLA: Instituto no pudo ante Franca en el Sandrín</h5>
                         <p class="card-text">La Gloria cayó 68-89 ante Sesi Franca por la quinta fecha de la fase de grupos del Grupo D de la Basketball Champions League. El lunes a las 22:10hs en el Sandrín el equipo de Sebastián González enfre...</p>
-                        <small class="card-date">📅 09/02/2026</small>
                         <a href="https://institutoacc.com.ar/index.php/bcla-instituto-no-pudo-ante-franca-en-el-sandrin/" class="btn-instituto" target="_blank" rel="noopener">
                             Leer más en institutoacc.com.ar →
                         </a>
@@ -243,13 +311,12 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-img-top d-flex align-items-center justify-content-center bg-light"><span style="font-size: 3rem;">📰</span></div>
+            <div class="col-md-4">
+                <div class="card noticia-sin-imagen">
                     <div class="card-body">
+                        <small class="card-date-top">09/02/2026</small>
                         <h5 class="card-title">La reserva gloriosa se mide ante Gimnasia este martes</h5>
                         <p class="card-text">Instituto visitará al Lobo platense este martes a partir de las 17hs en Estancia Chica. El encuentro será válido por la fecha 2 del Torneo Proyección Apertura 2026. CONVOCADOS: 1) Espeche, Lautaro. 2)...</p>
-                        <small class="card-date">📅 09/02/2026</small>
                         <a href="https://institutoacc.com.ar/index.php/la-reserva-gloriosa-se-mide-ante-gimnasia-este-martes/" class="btn-instituto" target="_blank" rel="noopener">
                             Leer más en institutoacc.com.ar →
                         </a>
@@ -257,14 +324,108 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-img-top d-flex align-items-center justify-content-center bg-light"><span style="font-size: 3rem;">📰</span></div>
+            <div class="col-md-4">
+                <div class="card noticia-sin-imagen">
                     <div class="card-body">
+                        <small class="card-date-top">09/02/2026</small>
                         <h5 class="card-title">Ganadores del sorteo de entradas para el partido con UDEC</h5>
                         <p class="card-text">Esta noche cerramos la fase regular de la BCLA frente a la UdeC. Para seguir premiando el apoyo incondicional de nuestros socios y socias, realizamos un sorteo de entradas para que puedan alentar al e...</p>
-                        <small class="card-date">📅 09/02/2026</small>
                         <a href="https://institutoacc.com.ar/index.php/ganadores-del-sorteo-de-entradas-para-el-partido-con-udec/" class="btn-instituto" target="_blank" rel="noopener">
+                            Leer más en institutoacc.com.ar →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card noticia-sin-imagen">
+                    <div class="card-body">
+                        <small class="card-date-top">07/02/2026</small>
+                        <h5 class="card-title">TODOS ALENTANDO A LA GLORIA EN LA BCLA</h5>
+                        <p class="card-text">Realizamos el sorteo de los 15 pares de entradas entre todos los socios y socias con cuota al día para alentar a la Gloria frente a Sesi Franca. Queremos agradecer y seguir premiando a quienes mes a m...</p>
+                        <a href="https://institutoacc.com.ar/index.php/todos-alentando-a-la-gloria-en-la-bcla/" class="btn-instituto" target="_blank" rel="noopener">
+                            Leer más en institutoacc.com.ar →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card noticia-sin-imagen">
+                    <div class="card-body">
+                        <small class="card-date-top">06/02/2026</small>
+                        <h5 class="card-title">La BCLA vuelve a La Caldera: Instituto y su historia en América</h5>
+                        <p class="card-text">El básquet continental vuelve a decir presente en Alta Córdoba. La Basketball Champions League Americas regresa al estadio Ángel Sandrín y, una vez más, Instituto será protagonista del máximo certamen...</p>
+                        <a href="https://institutoacc.com.ar/index.php/la-bcla-vuelve-a-la-caldera-instituto-y-su-historia-en-america/" class="btn-instituto" target="_blank" rel="noopener">
+                            Leer más en institutoacc.com.ar →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card noticia-sin-imagen">
+                    <div class="card-body">
+                        <small class="card-date-top">06/02/2026</small>
+                        <h5 class="card-title">Las Gloriosas no pudieron en su visita a Hindú</h5>
+                        <p class="card-text">En un partidazo que se definió sobre el final, Instituto cayó por 71-66 ante el “H” y buscará recuperarse el próximo martes en el Sandrín, cuando reciba a Bochad (CC). Hindú 71-66 Instituto El conjunt...</p>
+                        <a href="https://institutoacc.com.ar/index.php/las-gloriosas-no-pudieron-en-su-visita-a-hindu/" class="btn-instituto" target="_blank" rel="noopener">
+                            Leer más en institutoacc.com.ar →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://institutoacc.com.ar/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-04-at-09.03.41-640x800.jpeg" class="card-img-top" alt="Venta de entradas para la última ventana de la BCLA en Córdoba">
+                    <div class="card-body">
+                        <h5 class="card-title">Venta de entradas para la última ventana de la BCLA en Córdoba</h5>
+                        <p class="card-text">Ya está en marcha la venta de entradas para la última ventana de la Basketball Champions League Americas (BCLA), que se disputará el 7, 8 y 9 de febrero en el estadio Ángel Sandrín. La venta se realiz...</p>
+                        <small class="card-date">05/02/2026</small>
+                        <a href="https://institutoacc.com.ar/index.php/venta-de-entradas-para-la-ultima-ventana-de-la-bcla-en-cordoba/" class="btn-instituto" target="_blank" rel="noopener">
+                            Leer más en institutoacc.com.ar →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://institutoacc.com.ar/wp-content/uploads/2026/02/R6M23330-480x480.jpg" class="card-img-top" alt="Galería de fotos del partido ante Lanús">
+                    <div class="card-body">
+                        <h5 class="card-title">Galería de fotos del partido ante Lanús</h5>
+                        <p class="card-text"></p>
+                        <small class="card-date">05/02/2026</small>
+                        <a href="https://institutoacc.com.ar/index.php/galeria-de-fotos-del-partido-ante-lanus/" class="btn-instituto" target="_blank" rel="noopener">
+                            Leer más en institutoacc.com.ar →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://institutoacc.com.ar/wp-content/uploads/2026/02/5-Instituto-x-Tigre-04022026.jpg" class="card-img-top" alt="Debut con victoria para la reserva gloriosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Debut con victoria para la reserva gloriosa</h5>
+                        <p class="card-text">El albirrojo venció 1 a 0 a Tigre en el Monumental Presidente Perón por la fecha 1 del Torneo Proyección Apertura 2026. Pedro Baster anotó el único gol del encuentro a los 22′ de la primera etapa. Lau...</p>
+                        <small class="card-date">05/02/2026</small>
+                        <a href="https://institutoacc.com.ar/index.php/debut-con-victoria-para-la-reserva-gloriosa/" class="btn-instituto" target="_blank" rel="noopener">
+                            Leer más en institutoacc.com.ar →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://institutoacc.com.ar/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-03-at-23.24.53-scaled.jpeg" class="card-img-top" alt="Instituto y Lanús igualaron en un partidazo">
+                    <div class="card-body">
+                        <h5 class="card-title">Instituto y Lanús igualaron en un partidazo</h5>
+                        <p class="card-text">La Gloria y el Granate empataron 2 a 2 en el Monumental Presidente Perón por la tercera fecha del Torneo Apertura Mercado Libre 2026. Franco Jara, de penal, a los 25′ del primer tiempo y Matías Gallar...</p>
+                        <small class="card-date">04/02/2026</small>
+                        <a href="https://institutoacc.com.ar/index.php/instituto-y-lanus-igualaron-en-un-partidazo/" class="btn-instituto" target="_blank" rel="noopener">
                             Leer más en institutoacc.com.ar →
                         </a>
                     </div>
@@ -282,7 +443,7 @@
                     <img src="https://institutoacc.com.ar/wp-content/uploads/2026/02/R6M23330-480x480.jpg" class="card-img-top" alt="Galería de fotos del partido ante Lanús">
                     <div class="card-body">
                         <h5 class="card-title">Galería de fotos del partido ante Lanús</h5>
-                        <small class="card-date">📅 05/02/2026</small>
+                        <small class="card-date">05/02/2026</small>
                         <a href="https://institutoacc.com.ar/index.php/galeria-de-fotos-del-partido-ante-lanus/" class="btn-instituto" target="_blank" rel="noopener">
                             Ver galería completa →
                         </a>
@@ -295,7 +456,7 @@
                     <img src="https://institutoacc.com.ar/wp-content/uploads/2026/01/1-1-480x480.jpg" class="card-img-top" alt="Galería de fotos del partido ante Vélez Sarsfield">
                     <div class="card-body">
                         <h5 class="card-title">Galería de fotos del partido ante Vélez Sarsfield</h5>
-                        <small class="card-date">📅 23/01/2026</small>
+                        <small class="card-date">23/01/2026</small>
                         <a href="https://institutoacc.com.ar/index.php/galeria-de-fotos-del-partido-ante-velez-sarsfield/" class="btn-instituto" target="_blank" rel="noopener">
                             Ver galería completa →
                         </a>
@@ -308,9 +469,93 @@
                     <img src="https://institutoacc.com.ar/wp-content/uploads/2025/11/4O8A8041-480x480.jpg" class="card-img-top" alt="Galería de fotos del partido ante Talleres">
                     <div class="card-body">
                         <h5 class="card-title">Galería de fotos del partido ante Talleres</h5>
-                        <small class="card-date">📅 17/11/2025</small>
+                        <small class="card-date">17/11/2025</small>
                         <a href="https://institutoacc.com.ar/index.php/galeria-de-fotos-del-partido-ante-talleres/" class="btn-instituto" target="_blank" rel="noopener">
                             Ver galería completa →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Agenda Section -->
+        <h2 class="section-title">📅 Agenda Deportiva</h2>
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+                <div class="card agenda-card">
+                    <div class="card-body">
+                        <h5 class="card-title">BCLA</h5>
+                        <p class="card-text">Instituto vs UdeC Ángel Sandrín</p>
+                        <small class="card-date">06/10/2025</small>
+                        <a href="https://institutoacc.com.ar/index.php/liga-femenina-7/" class="btn-instituto" target="_blank" rel="noopener">
+                            Ver más →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card agenda-card">
+                    <div class="card-body">
+                        <h5 class="card-title">PROYECCIÓN LPF</h5>
+                        <p class="card-text">Gimnasia vs Instituto Estancia Chica</p>
+                        <small class="card-date">25/08/2025</small>
+                        <a href="https://institutoacc.com.ar/index.php/proyeccion-lpf-22/" class="btn-instituto" target="_blank" rel="noopener">
+                            Ver más →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card agenda-card">
+                    <div class="card-body">
+                        <h5 class="card-title">LIGA FEMENINA</h5>
+                        <p class="card-text">Instituto vs Bochas Ángel Sandrín</p>
+                        <small class="card-date">18/08/2025</small>
+                        <a href="https://institutoacc.com.ar/index.php/torneo-clausura-6/" class="btn-instituto" target="_blank" rel="noopener">
+                            Ver más →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card agenda-card">
+                    <div class="card-body">
+                        <h5 class="card-title">LIGA FEMENINA</h5>
+                        <p class="card-text">Instituto vs Hindú Ángel Sandrín</p>
+                        <small class="card-date">11/08/2025</small>
+                        <a href="https://institutoacc.com.ar/index.php/torneo-clausura-5/" class="btn-instituto" target="_blank" rel="noopener">
+                            Ver más →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card agenda-card">
+                    <div class="card-body">
+                        <h5 class="card-title">LIGA NACIONAL</h5>
+                        <p class="card-text">Instituto vs Unión (SF) Ángel Sandrín</p>
+                        <small class="card-date">11/08/2025</small>
+                        <a href="https://institutoacc.com.ar/index.php/proyeccion-lpf-20/" class="btn-instituto" target="_blank" rel="noopener">
+                            Ver más →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card agenda-card">
+                    <div class="card-body">
+                        <h5 class="card-title">TORNEO CLAUSURA</h5>
+                        <p class="card-text">Instituto vs Platense Monumental Pdte. Perón</p>
+                        <small class="card-date">28/07/2025</small>
+                        <a href="https://institutoacc.com.ar/index.php/torneo-clausura-4/" class="btn-instituto" target="_blank" rel="noopener">
+                            Ver más →
                         </a>
                     </div>
                 </div>

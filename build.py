@@ -12,38 +12,7 @@ import urllib.request
 import urllib.error
 
 # Importar configuración (si existe, sino usar valores por defecto)
-try:
-    from config import *
-except ImportError:
-    # Valores por defecto si no existe config.py
-    LIMITE_NOTICIAS = 2
-    LIMITE_FOTOS = 3
-    LIMITE_AGENDA = 0
-    COLOR_ROJO = '#E30613'
-    COLOR_BLANCO = '#FFFFFF'
-    TITULO_PRINCIPAL = 'INSTITUTO'
-    SUBTITULO = 'Sitio No Oficial - Por los Hinchas de La Gloria'
-    TITULO_NOTICIAS = '📰 Últimas Noticias'
-    TITULO_FOTOS = '📸 Galería de Fotos'
-    TITULO_AGENDA = '📅 Agenda Deportiva'
-    TEXTO_BOTON = 'Leer más en institutoacc.com.ar →'
-    TEXTO_BOTON_FOTOS = 'Ver galería completa →'
-    ALTURA_IMAGEN_NOTICIA = 250
-    ALTURA_IMAGEN_FOTO = 250
-    ANCHO_RAYA_ROJA = 30
-    ANCHO_RAYA_BLANCA = 30
-    COLUMNAS_NOTICIAS = 6
-    COLUMNAS_FOTOS = 4
-    MAX_DESCRIPCION = 200
-    MOSTRAR_NOTICIAS = True
-    MOSTRAR_FOTOS = True
-    MOSTRAR_AGENDA = False
-    # URLs de los feeds (por defecto)
-    FEED_URLS = {
-        'noticias': 'https://institutoacc.com.ar/index.php/feed/',
-        'fotos': 'https://institutoacc.com.ar/index.php/category/galeria-de-fotos/feed/',
-        'agenda': 'https://institutoacc.com.ar/index.php/category/agenda-deportiva/feed/'
-    }
+from config import *
 
 
 def download_feed(url, output_path):
@@ -81,8 +50,14 @@ def download_feed(url, output_path):
         print(f"  ✗ Error inesperado: {e}")
         return False
 
-def parse_feed(feed_file, limit=3):
-    """Parsea un feed RSS y retorna los primeros N items"""
+def parse_feed(feed_file, limit=3, require_image=False):
+    """Parsea un feed RSS y retorna los primeros N items
+
+    Args:
+        feed_file: Ruta al archivo XML del feed
+        limit: Cantidad máxima de items a retornar
+        require_image: Si es True, solo retorna items que tengan imágenes
+    """
     # Leer y limpiar el archivo XML
     with open(feed_file, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -96,7 +71,10 @@ def parse_feed(feed_file, limit=3):
     root = ET.fromstring(content)
 
     items = []
-    for item in root.findall('.//item')[:limit]:
+    # Si require_image=True, parseamos más items para encontrar suficientes con imágenes
+    max_items_to_check = limit * 5 if require_image else limit
+
+    for item in root.findall('.//item')[:max_items_to_check]:
         title = item.find('title').text or ''
         link = item.find('link').text or ''
         description = item.find('description').text or ''
@@ -109,6 +87,10 @@ def parse_feed(feed_file, limit=3):
         # Extraer primera imagen del contenido
         image_url = extract_first_image(content)
 
+        # Si require_image=True, saltar items sin imagen
+        if require_image and not image_url:
+            continue
+
         # Limpiar descripción HTML
         clean_desc = clean_html(description)
 
@@ -119,6 +101,10 @@ def parse_feed(feed_file, limit=3):
             'pub_date': format_date(pub_date),
             'image': image_url
         })
+
+        # Si ya tenemos suficientes items, parar
+        if len(items) >= limit:
+            break
 
     return items
 
@@ -156,7 +142,7 @@ def format_date(date_str):
     except:
         return date_str
 
-def generate_html(noticias, fotos):
+def generate_html(noticias, fotos, agenda=[]):
     """Genera el HTML del sitio"""
 
     # Calcular ancho total de rayas
@@ -274,10 +260,24 @@ def generate_html(noticias, fotos):
         }}
 
         .card-date {{
-            color: #888;
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0.8rem;
             display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+
+        .card-date-top {{
+            color: var(--instituto-rojo);
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
         }}
 
         .btn-instituto {{
@@ -356,6 +356,61 @@ def generate_html(noticias, fotos):
             font-size: 1rem;
         }}
 
+        /* Estilos para noticias sin imágenes */
+        .noticia-sin-imagen {{
+            min-height: 200px;
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            border-left: 4px solid var(--instituto-rojo);
+        }}
+
+        .noticia-sin-imagen .card-body {{
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }}
+
+        .noticia-sin-imagen .card-title {{
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }}
+
+        .noticia-sin-imagen .card-text {{
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }}
+
+        /* Estilos para agenda sin imágenes */
+        .agenda-card {{
+            min-height: 200px;
+            border-left: 4px solid var(--instituto-rojo);
+        }}
+
+        .agenda-card .card-body {{
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }}
+
+        .agenda-card .card-title {{
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }}
+
+        .agenda-card .card-text {{
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }}
+
+        .agenda-card .card-date {{
+            margin-top: auto;
+        }}
+
         @media (max-width: 768px) {{
             h1 {{
                 font-size: 1.8rem;
@@ -402,18 +457,31 @@ def generate_html(noticias, fotos):
 '''
         for noticia in noticias:
             if noticia['image']:
-                img_html = f'<img src="{noticia["image"]}" class="card-img-top" alt="{noticia["title"]}">'
-            else:
-                img_html = '<div class="card-img-top d-flex align-items-center justify-content-center bg-light"><span style="font-size: 3rem;">📰</span></div>'
-
-            html_content += f'''
+                # Noticia con imagen - diseño completo
+                html_content += f'''
             <div class="col-md-{COLUMNAS_NOTICIAS}">
                 <div class="card">
-                    {img_html}
+                    <img src="{noticia['image']}" class="card-img-top" alt="{noticia['title']}">
                     <div class="card-body">
                         <h5 class="card-title">{noticia['title']}</h5>
                         <p class="card-text">{noticia['description']}</p>
-                        <small class="card-date">📅 {noticia['pub_date']}</small>
+                        <small class="card-date">{noticia['pub_date']}</small>
+                        <a href="{noticia['link']}" class="btn-instituto" target="_blank" rel="noopener">
+                            {TEXTO_BOTON}
+                        </a>
+                    </div>
+                </div>
+            </div>
+'''
+            else:
+                # Noticia sin imagen - diseño compacto tipo agenda
+                html_content += f'''
+            <div class="col-md-{COLUMNAS_NOTICIAS}">
+                <div class="card noticia-sin-imagen">
+                    <div class="card-body">
+                        <small class="card-date-top">{noticia['pub_date']}</small>
+                        <h5 class="card-title">{noticia['title']}</h5>
+                        <p class="card-text">{noticia['description']}</p>
                         <a href="{noticia['link']}" class="btn-instituto" target="_blank" rel="noopener">
                             {TEXTO_BOTON}
                         </a>
@@ -444,9 +512,36 @@ def generate_html(noticias, fotos):
                     {img_html}
                     <div class="card-body">
                         <h5 class="card-title">{foto['title']}</h5>
-                        <small class="card-date">📅 {foto['pub_date']}</small>
+                        <small class="card-date">{foto['pub_date']}</small>
                         <a href="{foto['link']}" class="btn-instituto" target="_blank" rel="noopener">
                             {TEXTO_BOTON_FOTOS}
+                        </a>
+                    </div>
+                </div>
+            </div>
+'''
+        html_content += '''
+        </div>
+'''
+
+    # Agregar sección de agenda
+    if MOSTRAR_AGENDA and agenda:
+        html_content += f'''
+        <!-- Agenda Section -->
+        <h2 class="section-title">{TITULO_AGENDA}</h2>
+        <div class="row g-4 mb-5">
+'''
+        for evento in agenda:
+            # Agenda sin imágenes, solo contenido de texto
+            html_content += f'''
+            <div class="col-md-{COLUMNAS_AGENDA}">
+                <div class="card agenda-card">
+                    <div class="card-body">
+                        <h5 class="card-title">{evento['title']}</h5>
+                        <p class="card-text">{evento['description']}</p>
+                        <small class="card-date">{evento['pub_date']}</small>
+                        <a href="{evento['link']}" class="btn-instituto" target="_blank" rel="noopener">
+                            Ver más →
                         </a>
                     </div>
                 </div>
@@ -513,19 +608,25 @@ def main():
 
     if MOSTRAR_NOTICIAS and feed_files['noticias'].exists():
         print("📰 Parseando noticias...")
-        noticias = parse_feed(feed_files['noticias'], limit=LIMITE_NOTICIAS)
+        if SOLO_NOTICIAS_CON_IMAGEN:
+            print("   (Filtrando solo noticias con imágenes)")
+        noticias = parse_feed(feed_files['noticias'], limit=LIMITE_NOTICIAS, require_image=SOLO_NOTICIAS_CON_IMAGEN)
 
     if MOSTRAR_FOTOS and feed_files['fotos'].exists():
         print("📸 Parseando galería de fotos...")
-        fotos = parse_feed(feed_files['fotos'], limit=LIMITE_FOTOS)
+        if SOLO_FOTOS_CON_IMAGEN:
+            print("   (Filtrando solo galerías con imágenes)")
+        fotos = parse_feed(feed_files['fotos'], limit=LIMITE_FOTOS, require_image=SOLO_FOTOS_CON_IMAGEN)
 
     if MOSTRAR_AGENDA and feed_files['agenda'].exists():
         print("📅 Parseando agenda deportiva...")
-        agenda = parse_feed(feed_files['agenda'], limit=LIMITE_AGENDA)
+        if SOLO_AGENDA_CON_IMAGEN:
+            print("   (Filtrando solo eventos con imágenes)")
+        agenda = parse_feed(feed_files['agenda'], limit=LIMITE_AGENDA, require_image=SOLO_AGENDA_CON_IMAGEN)
 
     # Generar HTML
     print("🔨 Generando HTML...")
-    html = generate_html(noticias, fotos)
+    html = generate_html(noticias, fotos, agenda)
 
     # Guardar archivo
     output_file = output_dir / 'index.html'
