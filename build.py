@@ -580,7 +580,7 @@ def main():
     print("🔴⚪ Generando sitio de Instituto...")
 
     # Crear directorios si no existen
-    output_dir = Path('output')
+    output_dir = Path('docs')
     feeds_dir = Path('feeds')
     output_dir.mkdir(exist_ok=True)
     feeds_dir.mkdir(exist_ok=True)

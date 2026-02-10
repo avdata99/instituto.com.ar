@@ -23,7 +23,7 @@ instituto/
 ├── feeds/                    # Feeds RSS descargados
 │   ├── noticias--noticias-de-futbol-profesional.xml
 │   └── galeria-de-fotos.xml
-├── output/                   # Sitio generado (HTML estático)
+├── docs/                   # Sitio generado (HTML estático)
 │   └── index.html
 └── README.md
 ```
@@ -41,7 +41,7 @@ python3 build.py
 Esto:
 1. Descarga los feeds RSS más recientes desde institutoacc.com.ar
 2. Los guarda en la carpeta `feeds/`
-3. Genera el sitio en `output/index.html`
+3. Genera el sitio en `docs/index.html`
 
 ### 2. Ver el Sitio
 
@@ -49,16 +49,16 @@ Abrí el archivo en tu navegador:
 
 ```bash
 # Linux
-xdg-open output/index.html
+xdg-open docs/index.html
 
 # macOS
-open output/index.html
+open docs/index.html
 
 # Windows
-start output/index.html
+start docs/index.html
 ```
 
-O simplemente hacé doble click en `output/index.html`.
+O simplemente hacé doble click en `docs/index.html`.
 
 ## 🌐 Publicar el Sitio
 
@@ -67,8 +67,8 @@ Podés publicar el sitio en cualquier servicio de hosting estático:
 ### GitHub Pages
 
 ```bash
-# Copiá el contenido de output/ a tu repositorio
-cp output/index.html docs/
+# Copiá el contenido de docs/ a tu repositorio
+cp docs/index.html docs/
 git add docs/
 git commit -m "Actualizar sitio"
 git push
@@ -76,11 +76,11 @@ git push
 
 ### Netlify / Vercel / Cloudflare Pages
 
-Solo tenés que arrastrar la carpeta `output/` a la interfaz web.
+Solo tenés que arrastrar la carpeta `docs/` a la interfaz web.
 
 ### Servidor Web Tradicional
 
-Subí el contenido de `output/` a tu servidor via FTP/SFTP.
+Subí el contenido de `docs/` a tu servidor via FTP/SFTP.
 
 ## ⚙️ Configuración
 

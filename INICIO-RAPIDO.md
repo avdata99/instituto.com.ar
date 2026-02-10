@@ -8,12 +8,12 @@ El script descarga automáticamente los feeds desde institutoacc.com.ar:
 python3 build.py
 ```
 
-Esto descarga los feeds RSS y genera el sitio en `output/index.html`
+Esto descarga los feeds RSS y genera el sitio en `docs/index.html`
 
 ## Ver el sitio
 
 ```bash
-xdg-open output/index.html
+xdg-open docs/index.html
 ```
 
 ## Actualizar con nuevos feeds
@@ -44,9 +44,9 @@ python3 build.py
 
 ## Publicar
 
-1. **GitHub Pages**: Copiá `output/` a `docs/` en tu repo
-2. **Netlify/Vercel**: Arrastrá la carpeta `output/`
-3. **Servidor propio**: Subí `output/` via FTP/SFTP
+1. **GitHub Pages**: Copiá `docs/` a `docs/` en tu repo
+2. **Netlify/Vercel**: Arrastrá la carpeta `docs/`
+3. **Servidor propio**: Subí `docs/` via FTP/SFTP
 
 ---
 

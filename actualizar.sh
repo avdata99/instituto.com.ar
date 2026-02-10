@@ -14,7 +14,7 @@ python3 build.py
 if [ $? -eq 0 ]; then
     echo ""
     echo "✅ Sitio actualizado exitosamente!"
-    echo "📍 Ubicación: $(pwd)/output/index.html"
+    echo "📍 Ubicación: $(pwd)/docs/index.html"
     echo "🕐 Última actualización: $(date '+%Y-%m-%d %H:%M:%S')"
 else
     echo "❌ Error al generar el sitio"
