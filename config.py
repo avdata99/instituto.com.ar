@@ -94,10 +94,16 @@ OG_TITLE = 'Instituto - Sitio del Hincha'
 OG_DESCRIPTION = 'Las últimas noticias del albirrojo'
 OG_IMAGE = 'https://institutoacc.com.ar/wp-content/uploads/2023/logo-instituto.png'  # Cambiar por tu logo
 
+# ===== CONFIGURACIÓN DEL SITIO =====
+
+# URL base del sitio (para sitemap.xml)
+# Cambiá esto por tu URL real cuando despliegues el sitio
+SITE_URL = 'https://instituto.com.ar'  # Dominio personalizado (ver CNAME)
+
 # ===== CONFIGURACIÓN DE VIDEOS DE YOUTUBE =====
 
-# Cantidad de videos a mostrar en total
-LIMITE_VIDEOS = 12  # 3 filas de 4 videos
+# Cantidad de videos a mostrar en total (11 + 1 bloque BrizuelAMP = 12 elementos)
+LIMITE_VIDEOS = 11  # Se muestra 1 bloque promocional adicional
 
 # Canales de YouTube - Mapeo de handles a channel_ids
 # IMPORTANTE: Los channel_ids reales deben obtenerse con el script: bash obtener_channel_ids.sh

@@ -10,6 +10,7 @@ import re
 import html
 import urllib.request
 import urllib.error
+import unicodedata
 
 # Importar configuración (si existe, sino usar valores por defecto)
 from config import *
@@ -250,6 +251,261 @@ def format_youtube_date(date_str):
         return dt.strftime('%d/%m/%Y')
     except:
         return date_str
+
+def create_slug(text):
+    """Crea un slug URL-friendly desde un texto
+
+    Convierte "Mi Título Con Ñ" -> "mi-titulo-con-n"
+    """
+    # Normalizar unicode (ñ -> n, á -> a, etc.)
+    text = unicodedata.normalize('NFKD', text)
+    text = text.encode('ascii', 'ignore').decode('ascii')
+
+    # Convertir a minúsculas y reemplazar espacios/caracteres especiales con guiones
+    text = text.lower()
+    text = re.sub(r'[^\w\s-]', '', text)
+    text = re.sub(r'[-\s]+', '-', text)
+
+    # Limitar longitud y quitar guiones al inicio/final
+    text = text[:100].strip('-')
+
+    return text
+
+def generate_video_page(video, slug):
+    """Genera una página HTML individual para un video de YouTube
+
+    Args:
+        video: Dict con información del video (title, video_id, author, pub_date, description)
+        slug: Slug URL-friendly para la página
+
+    Returns:
+        String con el HTML completo de la página
+    """
+    # Calcular ancho total de rayas
+    ancho_total_rayas = ANCHO_RAYA_ROJA + ANCHO_RAYA_BLANCA
+
+    html = f'''<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{video['title']} - Instituto</title>
+    <meta name="description" content="{video['description'][:160]}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {{
+            --instituto-rojo: {COLOR_ROJO};
+            --instituto-blanco: {COLOR_BLANCO};
+        }}
+
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            min-height: 100vh;
+        }}
+
+        .header-instituto {{
+            background: repeating-linear-gradient(
+                90deg,
+                var(--instituto-rojo) 0px,
+                var(--instituto-rojo) {ANCHO_RAYA_ROJA}px,
+                var(--instituto-blanco) {ANCHO_RAYA_ROJA}px,
+                var(--instituto-blanco) {ancho_total_rayas}px
+            );
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }}
+
+        .header-content {{
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }}
+
+        .header-content h1 {{
+            color: var(--instituto-rojo);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+        }}
+
+        .video-container {{
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }}
+
+        .video-container iframe {{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }}
+
+        .video-info {{
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }}
+
+        .video-title {{
+            color: var(--instituto-rojo);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }}
+
+        .video-meta {{
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }}
+
+        .video-meta span {{
+            display: inline-block;
+            margin-right: 1.5rem;
+        }}
+
+        .video-description {{
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }}
+
+        .btn-instituto {{
+            background: var(--instituto-rojo);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.5rem;
+        }}
+
+        .btn-instituto:hover {{
+            background: #b30510;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(227, 6, 19, 0.3);
+            color: white;
+        }}
+
+        .btn-secondary {{
+            background: #666;
+            margin-left: 1rem;
+        }}
+
+        .btn-secondary:hover {{
+            background: #444;
+        }}
+    </style>
+</head>
+<body>
+    <div class="header-instituto">
+        <div class="container">
+            <div class="header-content text-center">
+                <h1>INSTITUTO - {TITULO_VIDEOS}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <!-- Video embed -->
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/{video['video_id']}?rel=0"
+                        title="{video['title']}"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Video information -->
+                <div class="video-info">
+                    <h1 class="video-title">{video['title']}</h1>
+                    <div class="video-meta">
+                        <span>📺 <strong>{video['author']}</strong></span>
+                        <span>📅 {video['pub_date']}</span>
+                    </div>
+                    <div class="video-description">{video['description']}</div>
+
+                    <div class="mt-4">
+                        <a href="/" class="btn-instituto">← Volver al inicio</a>
+                        <a href="{video['link']}" class="btn-instituto btn-secondary" target="_blank" rel="noopener">
+                            Ver en YouTube ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>'''
+
+    return html
+
+def generate_sitemap(base_url, video_slugs):
+    """Genera un sitemap.xml con todas las páginas del sitio
+
+    Args:
+        base_url: URL base del sitio (ej: https://ejemplo.com)
+        video_slugs: Lista de slugs de videos
+
+    Returns:
+        String con el XML del sitemap
+    """
+    # Fecha actual en formato ISO
+    today = datetime.now().strftime('%Y-%m-%d')
+
+    sitemap = '''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+'''
+
+    # Página principal
+    sitemap += f'''    <url>
+        <loc>{base_url}/</loc>
+        <lastmod>{today}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+'''
+
+    # Páginas de videos
+    for slug in video_slugs:
+        sitemap += f'''    <url>
+        <loc>{base_url}/videos/{slug}/</loc>
+        <lastmod>{today}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+'''
+
+    sitemap += '</urlset>'
+
+    return sitemap
 
 def generate_html(noticias, fotos, agenda=[], videos=[]):
     """Genera el HTML del sitio"""
@@ -558,6 +814,43 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
             opacity: 0.9;
         }}
 
+        /* Estilos para bloque promocional BrizuelAMP */
+        .promo-card {{
+            min-height: 340px;
+            background: linear-gradient(135deg, #fff8f0 0%, #fff5e8 100%);
+            border: 2px solid rgba(227, 6, 19, 0.1);
+        }}
+
+        .promo-card .card-img-top {{
+            height: {ALTURA_IMAGEN_VIDEO}px;
+            object-fit: cover;
+        }}
+
+        .promo-card .card-body {{
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+        }}
+
+        .promo-card .card-title {{
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            flex-grow: 1;
+            color: var(--instituto-rojo);
+        }}
+
+        .promo-card .text-muted {{
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }}
+
+        .promo-card:hover {{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(227, 6, 19, 0.25);
+            background: linear-gradient(135deg, #fffaf5 0%, #fff7ed 100%);
+        }}
+
         @media (max-width: 768px) {{
             h1 {{
                 font-size: 1.8rem;
@@ -602,12 +895,16 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
         <h2 class="section-title">{TITULO_VIDEOS}</h2>
         <div class="row g-4 mb-5">
 '''
-        for video in videos:
+        for idx, video in enumerate(videos):
             # Thumbnail del video
             if video['image']:
                 img_html = f'<img src="{video["image"]}" class="card-img-top" alt="{video["title"]}">'
             else:
                 img_html = '<div class="card-img-top d-flex align-items-center justify-content-center bg-dark"><span style="font-size: 3rem; filter: brightness(1.2);">▶️</span></div>'
+
+            # Generar slug para la URL interna del video
+            video_slug = create_slug(video['title'])
+            video_url = f"/videos/{video_slug}/"
 
             html_content += f'''
             <div class="col-md-{COLUMNAS_VIDEOS}">
@@ -617,13 +914,31 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
                         <small class="card-date-top">{video['pub_date']}</small>
                         <h5 class="card-title">{video['title']}</h5>
                         <p class="text-muted">📺 {video['author']}</p>
-                        <a href="{video['link']}" class="btn-instituto" target="_blank" rel="noopener">
-                            {TEXTO_BOTON_VIDEOS}
+                        <a href="{video_url}" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
             </div>
 '''
+
+            # Insertar bloque de BrizuelAMP después del primer video
+            if idx == 0:
+                html_content += f'''
+            <div class="col-md-{COLUMNAS_VIDEOS}">
+                <div class="card promo-card">
+                    <img src="/imgs/brizuelamp.png" class="card-img-top" alt="Vivi los partidos sin subtitulos">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Te cansaste de los relatores porteños en la TV?</h5>
+                        <p class="text-muted">📻 Brizuelamp</p>
+                        <a href="https://brizuelamp.com.ar" class="btn-instituto" target="_blank" rel="noopener">
+                            Ir a BrizuelAMP →
+                        </a>
+                    </div>
+                </div>
+            </div>
+'''
+
         html_content += '''
         </div>
 '''
@@ -854,12 +1169,54 @@ def main():
     print("\n🔨 Generando HTML...")
     html = generate_html(noticias, fotos, agenda, videos)
 
-    # Guardar archivo
+    # Guardar archivo principal
     output_file = output_dir / 'index.html'
     output_file.write_text(html, encoding='utf-8')
+    print(f"✓ Página principal generada")
 
-    print(f"✅ Sitio generado exitosamente en: {output_file.absolute()}")
-    print(f"🌐 Abrí el archivo en tu navegador para ver el resultado!")
+    # Generar páginas individuales para cada video
+    video_slugs = []
+    if MOSTRAR_VIDEOS and videos:
+        print("\n🎬 Generando páginas de videos...")
+        videos_dir = output_dir / 'videos'
+        videos_dir.mkdir(exist_ok=True)
+
+        for video in videos:
+            slug = create_slug(video['title'])
+            video_slugs.append(slug)
+
+            # Crear directorio para el video
+            video_dir = videos_dir / slug
+            video_dir.mkdir(exist_ok=True)
+
+            # Generar HTML del video
+            video_html = generate_video_page(video, slug)
+
+            # Guardar archivo
+            video_file = video_dir / 'index.html'
+            video_file.write_text(video_html, encoding='utf-8')
+
+        print(f"✓ {len(videos)} páginas de videos generadas en /videos/")
+
+    # Generar sitemap.xml
+    print("\n🗺️  Generando sitemap...")
+
+    # Obtener URL base desde config (importado al inicio)
+    try:
+        base_url = SITE_URL.rstrip('/')
+    except NameError:
+        base_url = 'https://instituto.github.io'
+
+    sitemap_xml = generate_sitemap(base_url, video_slugs)
+    sitemap_file = output_dir / 'sitemap.xml'
+    sitemap_file.write_text(sitemap_xml, encoding='utf-8')
+    print(f"✓ Sitemap generado con {len(video_slugs) + 1} URLs")
+
+    print(f"\n✅ Sitio generado exitosamente en: {output_dir.absolute()}")
+    print(f"   📄 Página principal: {output_file}")
+    print(f"   🎥 Videos: {len(video_slugs)} páginas en /videos/")
+    print(f"   🗺️  Sitemap: {sitemap_file}")
+    print(f"\n🌐 Abrí {output_file} en tu navegador para ver el resultado!")
 
 if __name__ == '__main__':
     main()
