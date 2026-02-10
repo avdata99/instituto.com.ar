@@ -929,7 +929,11 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
                 <div class="card promo-card">
                     <img src="/imgs/brizuelamp.png" class="card-img-top" alt="Vivi los partidos sin subtitulos">
                     <div class="card-body">
-                        <h5 class="card-title">¿Te cansaste de los relatores porteños en la TV?</h5>
+                        <h5 class="card-title">
+                            ¿Te cansaste de los relatores porteños en la TV?
+                            Viví los partidos de Instituto sin subtítulos,
+                            mutea la TV y poné tu relator preferido aquí.
+                        </h5>
                         <p class="text-muted">📻 Brizuelamp</p>
                         <a href="https://brizuelamp.com.ar" class="btn-instituto" target="_blank" rel="noopener">
                             Ir a BrizuelAMP →

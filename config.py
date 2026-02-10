@@ -16,7 +16,7 @@ FEED_URLS = {
     'fotos': 'https://institutoacc.com.ar/index.php/category/galeria-de-fotos/feed/',
     'agenda': 'https://institutoacc.com.ar/index.php/category/agenda-deportiva/feed/'
 }
-DOWNLOAD_FEED = False
+DOWNLOAD_FEED = True
 
 # ===== CONFIGURACIÓN DE COLORES =====
 

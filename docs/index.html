@@ -306,6 +306,43 @@
             opacity: 0.9;
         }
 
+        /* Estilos para bloque promocional BrizuelAMP */
+        .promo-card {
+            min-height: 340px;
+            background: linear-gradient(135deg, #fff8f0 0%, #fff5e8 100%);
+            border: 2px solid rgba(227, 6, 19, 0.1);
+        }
+
+        .promo-card .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .promo-card .card-body {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .promo-card .card-title {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            flex-grow: 1;
+            color: var(--instituto-rojo);
+        }
+
+        .promo-card .text-muted {
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .promo-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(227, 6, 19, 0.25);
+            background: linear-gradient(135deg, #fffaf5 0%, #fff7ed 100%);
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8rem;
@@ -343,8 +380,25 @@
                         <small class="card-date-top">09/02/2026</small>
                         <h5 class="card-title">En Vivo | Gimnasia (M) vs Instituto | Fecha 4 - Apertura 2026 | Radio Suquia</h5>
                         <p class="text-muted">📺 Radio Suquía</p>
-                        <a href="https://www.youtube.com/watch?v=l8a5ro6bUcA" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/en-vivo-gimnasia-m-vs-instituto-fecha-4-apertura-2026-radio-suquia/" class="btn-instituto">
+                            Ver video →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card promo-card">
+                    <img src="/imgs/brizuelamp.png" class="card-img-top" alt="Vivi los partidos sin subtitulos">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            ¿Te cansaste de los relatores porteños en la TV?
+                            Viví los partidos de Instituto sin subtítulos,
+                            mutea la TV y poné tu relator preferido aquí.
+                        </h5>
+                        <p class="text-muted">📻 Brizuelamp</p>
+                        <a href="https://brizuelamp.com.ar" class="btn-instituto" target="_blank" rel="noopener">
+                            Ir a BrizuelAMP →
                         </a>
                     </div>
                 </div>
@@ -357,8 +411,8 @@
                         <small class="card-date-top">09/02/2026</small>
                         <h5 class="card-title">OTRO DESASTRE - GIMNASIA DE MENDOZA 1-0 INSTITUTO - UNA MIRADA DIFERENTE - PABLO CHUCREL.</h5>
                         <p class="text-muted">📺 PABLO CHUCREL </p>
-                        <a href="https://www.youtube.com/watch?v=7jAy7O3BcY4" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/otro-desastre-gimnasia-de-mendoza-1-0-instituto-una-mirada-diferente-pablo-chucrel/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -371,8 +425,8 @@
                         <small class="card-date-top">09/02/2026</small>
                         <h5 class="card-title">FLOJISIMO Y SIN RESPUESUESTA - Gimnasia (Mza.) 1 - 0 Instituto - El resumen del partido -</h5>
                         <p class="text-muted">📺 Joa Valenzuela </p>
-                        <a href="https://www.youtube.com/watch?v=d4rb2EmG9Ys" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/flojisimo-y-sin-respuesuesta-gimnasia-mza-1-0-instituto-el-resumen-del-partido/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -385,8 +439,8 @@
                         <small class="card-date-top">04/02/2026</small>
                         <h5 class="card-title">Conferencia de prensa - Bruno Martelotto y Daniel Jiménez - FECHA 3</h5>
                         <p class="text-muted">📺 Instituto ACC</p>
-                        <a href="https://www.youtube.com/watch?v=WdLpNCFUe9k" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/conferencia-de-prensa-bruno-martelotto-y-daniel-jimenez-fecha-3/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -399,8 +453,8 @@
                         <small class="card-date-top">04/02/2026</small>
                         <h5 class="card-title">Lo positivo FUE EL PUNTO | Instituto 2-2 Lanús | El resumen del partido | Joa Valenzuela </h5>
                         <p class="text-muted">📺 Joa Valenzuela </p>
-                        <a href="https://www.youtube.com/watch?v=JO-JEXQ4cK4" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/lo-positivo-fue-el-punto-instituto-2-2-lanus-el-resumen-del-partido-joa-valenzuela/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -413,8 +467,8 @@
                         <small class="card-date-top">04/02/2026</small>
                         <h5 class="card-title">En Vivo | Instituto vs Lanús | Fecha 3 - Apertura 2026 | Radio Suquia</h5>
                         <p class="text-muted">📺 Radio Suquía</p>
-                        <a href="https://www.youtube.com/watch?v=wW_nE_Xd1Nc" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/en-vivo-instituto-vs-lanus-fecha-3-apertura-2026-radio-suquia/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -427,8 +481,8 @@
                         <small class="card-date-top">04/02/2026</small>
                         <h5 class="card-title">POR ROFFO Y A PESAR DE… - INSTITUTO 2-2 LANÚS - UNA MIRADA DIFERENTE - PABLO CHUCREL.</h5>
                         <p class="text-muted">📺 PABLO CHUCREL </p>
-                        <a href="https://www.youtube.com/watch?v=I-q_HYhDHmM" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/por-roffo-y-a-pesar-de-instituto-2-2-lanus-una-mirada-diferente-pablo-chucrel/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -441,8 +495,8 @@
                         <small class="card-date-top">02/02/2026</small>
                         <h5 class="card-title">Camisetas Givova 2026</h5>
                         <p class="text-muted">📺 Instituto ACC</p>
-                        <a href="https://www.youtube.com/watch?v=C7Z0eDQNTx4" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/camisetas-givova-2026/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -455,8 +509,8 @@
                         <small class="card-date-top">02/02/2026</small>
                         <h5 class="card-title">EN VIVO - Talleres preocupado  - Belgrano CON BAJAS SENSIBLES  - Instituto sin DEFINIFICON  -</h5>
                         <p class="text-muted">📺 Joa Valenzuela </p>
-                        <a href="https://www.youtube.com/watch?v=tXH58pQAe88" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/en-vivo-talleres-preocupado-belgrano-con-bajas-sensibles-instituto-sin-definificon/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -469,8 +523,8 @@
                         <small class="card-date-top">26/01/2026</small>
                         <h5 class="card-title">En Vivo | Platense vs Instituto | Fecha 2 - Apertura 2026 | Radio Suquia</h5>
                         <p class="text-muted">📺 Radio Suquía</p>
-                        <a href="https://www.youtube.com/watch?v=uSQWexC9ivQ" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/en-vivo-platense-vs-instituto-fecha-2-apertura-2026-radio-suquia/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
@@ -483,22 +537,8 @@
                         <small class="card-date-top">26/01/2026</small>
                         <h5 class="card-title">El equipo NO responde | Plántese 2-1 Instituto | El resumen del partido | Joa Valenzuela </h5>
                         <p class="text-muted">📺 Joa Valenzuela </p>
-                        <a href="https://www.youtube.com/watch?v=KZoD8NwBnz4" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card video-card">
-                    <img src="https://i2.ytimg.com/vi/Q5Nx_jmr9xY/hqdefault.jpg" class="card-img-top" alt="LO PIERDE SOLITO - PLATENSE 2-1 INSTITUTO - UNA MIRADA DIFERENTE - PABLO CHUCREL.">
-                    <div class="card-body">
-                        <small class="card-date-top">26/01/2026</small>
-                        <h5 class="card-title">LO PIERDE SOLITO - PLATENSE 2-1 INSTITUTO - UNA MIRADA DIFERENTE - PABLO CHUCREL.</h5>
-                        <p class="text-muted">📺 PABLO CHUCREL </p>
-                        <a href="https://www.youtube.com/watch?v=Q5Nx_jmr9xY" class="btn-instituto" target="_blank" rel="noopener">
-                            Ver en YouTube →
+                        <a href="/videos/el-equipo-no-responde-plantese-2-1-instituto-el-resumen-del-partido-joa-valenzuela/" class="btn-instituto">
+                            Ver video →
                         </a>
                     </div>
                 </div>
