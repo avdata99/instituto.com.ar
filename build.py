@@ -814,6 +814,15 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
             opacity: 0.9;
         }}
 
+        .video-card a {{
+            cursor: pointer;
+        }}
+
+        .video-card .card-title a:hover {{
+            color: var(--instituto-rojo);
+            opacity: 0.8;
+        }}
+
         /* Estilos para bloque promocional BrizuelAMP */
         .promo-card {{
             min-height: 340px;
@@ -909,10 +918,16 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
             html_content += f'''
             <div class="col-md-{COLUMNAS_VIDEOS}">
                 <div class="card video-card">
-                    {img_html}
+                    <a href="{video_url}" style="text-decoration: none;">
+                        {img_html}
+                    </a>
                     <div class="card-body">
                         <small class="card-date-top">{video['pub_date']}</small>
-                        <h5 class="card-title">{video['title']}</h5>
+                        <h5 class="card-title">
+                            <a href="{video_url}" style="text-decoration: none; color: inherit;">
+                                {video['title']}
+                            </a>
+                        </h5>
                         <p class="text-muted">📺 {video['author']}</p>
                         <a href="{video_url}" class="btn-instituto">
                             Ver video →
