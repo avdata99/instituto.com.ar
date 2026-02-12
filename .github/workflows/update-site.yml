@@ -3,7 +3,7 @@ name: Update Instituto Site
 on:
   # Ejecutar cada jueves a las 10:00 AM UTC
   schedule:
-    - cron: '0 10 * * 4'  # 0 10 * * 4 = 10:00 AM UTC cada jueves
+    - cron: '0 22 * * *'  # 10:00 AM UTC todos los días
 
   # Permitir ejecución manual desde GitHub
   workflow_dispatch:
