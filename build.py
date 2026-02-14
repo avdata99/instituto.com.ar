@@ -1075,11 +1075,7 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
         <div class="container">
             <div class="footer-content">
                 <p><strong>Sitio No Oficial - Hecho por Hinchas para Hinchas</strong></p>
-                <p>Todo el contenido es propiedad de <a href="https://institutoacc.com.ar" target="_blank" rel="noopener">Instituto</a></p>
                 <p>Visitá el sitio oficial: <a href="https://institutoacc.com.ar" target="_blank" rel="noopener">institutoacc.com.ar</a></p>
-                <p style="margin-top: 1rem; color: #888; font-size: 0.9rem;">
-                    ⚪ Generado automáticamente desde los feeds oficiales ⚪
-                </p>
             </div>
         </div>
     </div>

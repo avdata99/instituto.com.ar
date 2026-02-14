@@ -75,7 +75,8 @@ MAX_DESCRIPCION = 200
 # Habilitar/deshabilitar secciones
 MOSTRAR_NOTICIAS = True
 MOSTRAR_FOTOS = True
-MOSTRAR_AGENDA = True  # Mostrar agenda deportiva
+# La agenda deportiva no se actualiza hace años, la quitamos temporalmente
+MOSTRAR_AGENDA = False  # Mostrar agenda deportiva
 
 # Filtros de contenido
 SOLO_NOTICIAS_CON_IMAGEN = False  # Mostrar todas las noticias (con y sin imagen)
