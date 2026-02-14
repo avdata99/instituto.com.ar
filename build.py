@@ -1075,6 +1075,7 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
         <div class="container">
             <div class="footer-content">
                 <p><strong>Sitio No Oficial - Hecho por Hinchas para Hinchas</strong></p>
+                <p><a href="mailto:info@instituto.com.ar">info@instituto.com.ar</a></p>
                 <p>Visitá el sitio oficial: <a href="https://institutoacc.com.ar" target="_blank" rel="noopener">institutoacc.com.ar</a></p>
             </div>
         </div>

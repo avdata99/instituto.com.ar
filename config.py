@@ -60,13 +60,6 @@ COLUMNAS_NOTICIAS = 4  # 3 columnas
 COLUMNAS_FOTOS = 4     # 3 columnas
 COLUMNAS_AGENDA = 4     # 3 columnas
 
-# ===== CONFIGURACIÓN DE FOOTER =====
-
-TEXTO_FOOTER_LINEA1 = 'Sitio No Oficial - Hecho por Hinchas para Hinchas'
-TEXTO_FOOTER_LINEA2 = 'Todo el contenido es propiedad de <a href="https://institutoacc.com.ar" target="_blank" rel="noopener">Instituto</a>'
-TEXTO_FOOTER_LINEA3 = 'Visitá el sitio oficial: <a href="https://institutoacc.com.ar" target="_blank" rel="noopener">institutoacc.com.ar</a>'
-MOSTRAR_FOOTER_RAYAS = True
-
 # ===== CONFIGURACIÓN AVANZADA =====
 
 # Longitud máxima de descripción (caracteres)
