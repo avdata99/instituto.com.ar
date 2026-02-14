@@ -1088,6 +1088,7 @@ def generate_html(noticias, fotos, agenda=[], videos=[]):
 
     return html_content
 
+
 def main():
     """Función principal"""
     print("🔴⚪ Generando sitio de Instituto...")
