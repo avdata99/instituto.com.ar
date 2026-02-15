@@ -16,6 +16,9 @@ FEED_URLS = {
     'fotos': 'https://institutoacc.com.ar/index.php/category/galeria-de-fotos/feed/',
     'agenda': 'https://institutoacc.com.ar/index.php/category/agenda-deportiva/feed/'
 }
+# TODO otros a revisar
+# Liga cordobesa de futbol: https://futboldecordoba.com.ar/tag/instituto-atletico-central-cordoba/feed/
+
 DOWNLOAD_FEED = True
 
 # ===== CONFIGURACIÓN DE COLORES =====
