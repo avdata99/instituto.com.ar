@@ -159,6 +159,11 @@ YOUTUBE_CHANNELS = {
         'channel_id': 'UCyE25hxg_D2PeyJpJ4T9cVA',
         'filter_keywords': True,
         'name': 'Última Jugada'
+    },
+    'peladoglorioso': {  # https://www.youtube.com/@PelaGlorioso
+        'channel_id': 'UCdiDaGTyiAOXW1sU38QlKEQ',
+        'filter_keywords': False,
+        'name': 'Pelado Glorioso'
     }
 }
 
@@ -172,7 +177,7 @@ YOUTUBE_VIDEOS_PER_CHANNEL_FETCH = 15
 MOSTRAR_VIDEOS = True
 
 # Textos de la sección
-TITULO_VIDEOS = '🎥 Videos de Instituto'
+TITULO_VIDEOS = 'Videos de Instituto'
 TEXTO_BOTON_VIDEOS = 'Ver en YouTube →'
 
 # Layout

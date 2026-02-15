@@ -51,8 +51,8 @@
    <media:thumbnail url="https://i4.ytimg.com/vi/oyzyiKpzLHY/hqdefault.jpg" width="480" height="360"/>
    <media:description></media:description>
    <media:community>
-    <media:starRating count="26" average="5.00" min="1" max="5"/>
-    <media:statistics views="1063"/>
+    <media:starRating count="28" average="5.00" min="1" max="5"/>
+    <media:statistics views="1073"/>
    </media:community>
   </media:group>
  </entry>
@@ -74,8 +74,8 @@
    <media:thumbnail url="https://i4.ytimg.com/vi/gehIgPKh7Nc/hqdefault.jpg" width="480" height="360"/>
    <media:description></media:description>
    <media:community>
-    <media:starRating count="50" average="5.00" min="1" max="5"/>
-    <media:statistics views="471"/>
+    <media:starRating count="51" average="5.00" min="1" max="5"/>
+    <media:statistics views="494"/>
    </media:community>
   </media:group>
  </entry>
@@ -97,8 +97,8 @@
    <media:thumbnail url="https://i3.ytimg.com/vi/JUwOrS-3cag/hqdefault.jpg" width="480" height="360"/>
    <media:description></media:description>
    <media:community>
-    <media:starRating count="153" average="5.00" min="1" max="5"/>
-    <media:statistics views="1307"/>
+    <media:starRating count="154" average="5.00" min="1" max="5"/>
+    <media:statistics views="1355"/>
    </media:community>
   </media:group>
  </entry>
@@ -263,7 +263,7 @@ Fitnes Espacio
 Mateando con pasion</media:description>
    <media:community>
     <media:starRating count="31" average="5.00" min="1" max="5"/>
-    <media:statistics views="815"/>
+    <media:statistics views="816"/>
    </media:community>
   </media:group>
  </entry>
@@ -387,7 +387,7 @@ Mateando con pasion</media:description>
    <media:description></media:description>
    <media:community>
     <media:starRating count="11" average="5.00" min="1" max="5"/>
-    <media:statistics views="347"/>
+    <media:statistics views="350"/>
    </media:community>
   </media:group>
  </entry>
@@ -433,7 +433,7 @@ Mateando con pasion</media:description>
    <media:description></media:description>
    <media:community>
     <media:starRating count="54" average="5.00" min="1" max="5"/>
-    <media:statistics views="4946"/>
+    <media:statistics views="4953"/>
    </media:community>
   </media:group>
  </entry>
