@@ -154,6 +154,11 @@ YOUTUBE_CHANNELS = {
         'channel_id': 'UCcXLIwBDN3UewgfqzVSoCnw',
         'filter_keywords': True,
         'name': 'Gol&Pop'
+    },
+    'ultimajugada': {  # https://www.youtube.com/@UltimaJugadaCBA
+        'channel_id': 'UCyE25hxg_D2PeyJpJ4T9cVA',
+        'filter_keywords': True,
+        'name': 'Última Jugada'
     }
 }
 
