@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Vivo | Instituto vs Central Cba | Fecha 5 - Apertura 2026 | Radio Suquia - Instituto</title>
+    <meta name="description" content="Relatos: Pablo Olivarez Comentarios: Juan Ricardo Rodriguez Brizuela Aportes: Bruno Bono Estudios: Ariel Sarboraria Transmisión de Youtube: Elea "La Griega" Ane">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --instituto-rojo: #E30613;
+            --instituto-blanco: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            min-height: 100vh;
+        }
+
+        .header-instituto {
+            background: repeating-linear-gradient(
+                90deg,
+                var(--instituto-rojo) 0px,
+                var(--instituto-rojo) 120px,
+                var(--instituto-blanco) 120px,
+                var(--instituto-blanco) 240px
+            );
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content h1 {
+            color: var(--instituto-rojo);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .video-title {
+            color: var(--instituto-rojo);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .video-meta {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .video-meta span {
+            display: inline-block;
+            margin-right: 1.5rem;
+        }
+
+        .video-description {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .btn-instituto {
+            background: var(--instituto-rojo);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.5rem;
+        }
+
+        .btn-instituto:hover {
+            background: #b30510;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(227, 6, 19, 0.3);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #666;
+            margin-left: 1rem;
+        }
+
+        .btn-secondary:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-instituto">
+        <div class="container">
+            <div class="header-content text-center">
+                <h1>INSTITUTO - Videos de Instituto</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <!-- Video embed -->
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/Wcgsfcc4_uY?rel=0"
+                        title="En Vivo | Instituto vs Central Cba | Fecha 5 - Apertura 2026 | Radio Suquia"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Video information -->
+                <div class="video-info">
+                    <h1 class="video-title">En Vivo | Instituto vs Central Cba | Fecha 5 - Apertura 2026 | Radio Suquia</h1>
+                    <div class="video-meta">
+                        <span>📺 <strong>Radio Suquía</strong></span>
+                        <span>📅 16/02/2026</span>
+                    </div>
+                    <div class="video-description">Relatos: Pablo Olivarez Comentarios: Juan Ricardo Rodriguez Brizuela Aportes: Bruno Bono Estudios: Ariel Sarboraria Transmisión de Youtube: Elea "La Griega" Anestiades Puesta al aire en cancha: Christ...</div>
+
+                    <div class="mt-4">
+                        <a href="/" class="btn-instituto">← Volver al inicio</a>
+                        <a href="https://www.youtube.com/watch?v=Wcgsfcc4_uY" class="btn-instituto btn-secondary" target="_blank" rel="noopener">
+                            Ver en YouTube ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
