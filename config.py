@@ -100,7 +100,7 @@ SITE_URL = 'https://instituto.com.ar'  # Dominio personalizado (ver CNAME)
 # ===== CONFIGURACIÓN DE VIDEOS DE YOUTUBE =====
 
 # Cantidad de videos a mostrar en total (11 + 1 bloque BrizuelAMP = 12 elementos)
-LIMITE_VIDEOS = 11  # Se muestra 1 bloque promocional adicional
+LIMITE_VIDEOS = 15  # Se muestra 1 bloque promocional adicional
 
 # Canales de YouTube - Mapeo de handles a channel_ids
 # IMPORTANTE: Los channel_ids reales deben obtenerse con el script: bash obtener_channel_ids.sh
@@ -167,6 +167,11 @@ YOUTUBE_CHANNELS = {
         'channel_id': 'UCdiDaGTyiAOXW1sU38QlKEQ',
         'filter_keywords': False,
         'name': 'Pelado Glorioso'
+    },
+    'ESPNFans': {  # https://www.youtube.com/@ESPNFans
+        'channel_id': 'UCFmMw7yTuLTCuMhpZD5dVsg',
+        'filter_keywords': True,
+        'name': 'ESPN Fans'
     }
 }
 
