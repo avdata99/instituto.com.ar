@@ -151,6 +151,18 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://instituto.com.ar/videos/instituto-1-0-central-cordoba-el-gol-de-matias-fonseca-relato-mauricio-coccolo-cadena-3/</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://instituto.com.ar/videos/instituto-2-0-central-cordoba-el-gol-de-alex-luna-relato-mauricio-coccolo-cadena-3/</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://instituto.com.ar/videos/instituto-consiguio-el-primer-triunfo-del-ano-frente-a-central-cordoba-en-alta-cordoba/</loc>
         <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
@@ -212,6 +224,12 @@
     </url>
     <url>
         <loc>https://instituto.com.ar/videos/la-gloria-gano-en-el-debut-de-diego-flores-analisis-de-marcos-torrejon/</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://instituto.com.ar/videos/la-gloria-sumo-su-primer-triunfo-y-festejo-en-alta-cordoba-instituto-2-0-c-cordoba-resumen/</loc>
         <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
