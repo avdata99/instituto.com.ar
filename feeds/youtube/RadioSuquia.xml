@@ -20,8 +20,8 @@
    <name>Radio Suquía</name>
    <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
   </author>
-  <published>2026-02-15T20:38:10+00:00</published>
-  <updated>2026-02-15T20:39:30+00:00</updated>
+  <published>2026-02-16T11:51:39+00:00</published>
+  <updated>2026-02-16T12:13:56+00:00</updated>
   <media:group>
    <media:title>En Vivo | Racing vs Estudiantes | Fecha 1 - Primera Nacional | Radio Suquia</media:title>
    <media:content url="https://www.youtube.com/v/slfqfw5mMbg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
@@ -35,8 +35,183 @@ Puesta al aire en cancha: Christian &quot;Pli Pli&quot; Puyo / Jere Vaca
 Puesta al aire en estudios: Gerardo Copari 
 Producción: Gonzalo Silva</media:description>
    <media:community>
-    <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="0"/>
+    <media:starRating count="31" average="5.00" min="1" max="5"/>
+    <media:statistics views="2036"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Wcgsfcc4_uY</id>
+  <yt:videoId>Wcgsfcc4_uY</yt:videoId>
+  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
+  <title>En Vivo | Instituto vs Central Cba | Fecha 5 - Apertura 2026 | Radio Suquia</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=Wcgsfcc4_uY"/>
+  <author>
+   <name>Radio Suquía</name>
+   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
+  </author>
+  <published>2026-02-16T03:56:35+00:00</published>
+  <updated>2026-02-16T09:13:17+00:00</updated>
+  <media:group>
+   <media:title>En Vivo | Instituto vs Central Cba | Fecha 5 - Apertura 2026 | Radio Suquia</media:title>
+   <media:content url="https://www.youtube.com/v/Wcgsfcc4_uY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/Wcgsfcc4_uY/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Relatos: Pablo Olivarez
+Comentarios: Juan Ricardo Rodriguez Brizuela
+Aportes: Bruno Bono
+Estudios: Ariel Sarboraria
+Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
+Puesta al aire en cancha: Christian &quot;Pli Pli&quot; Puyo
+Puesta al aire en estudios: Gerardo Copari 
+Producción: Gonzalo Silva</media:description>
+   <media:community>
+    <media:starRating count="30" average="5.00" min="1" max="5"/>
+    <media:statistics views="2967"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:I5agwRYFHTQ</id>
+  <yt:videoId>I5agwRYFHTQ</yt:videoId>
+  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
+  <title>Gol #Instituto A. Luna | Relata Pablo Olivarez vs. Central Córdoba (2-0)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=I5agwRYFHTQ"/>
+  <author>
+   <name>Radio Suquía</name>
+   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
+  </author>
+  <published>2026-02-16T02:45:28+00:00</published>
+  <updated>2026-02-16T09:15:28+00:00</updated>
+  <media:group>
+   <media:title>Gol #Instituto A. Luna | Relata Pablo Olivarez vs. Central Córdoba (2-0)</media:title>
+   <media:content url="https://www.youtube.com/v/I5agwRYFHTQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/I5agwRYFHTQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="5" average="5.00" min="1" max="5"/>
+    <media:statistics views="98"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:JPAHa6440iU</id>
+  <yt:videoId>JPAHa6440iU</yt:videoId>
+  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
+  <title>Gol #Instituto M. Fonseca | Relata Pablo Olivarez vs. Central Córdoba (1-0)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=JPAHa6440iU"/>
+  <author>
+   <name>Radio Suquía</name>
+   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
+  </author>
+  <published>2026-02-16T02:35:18+00:00</published>
+  <updated>2026-02-16T09:11:33+00:00</updated>
+  <media:group>
+   <media:title>Gol #Instituto M. Fonseca | Relata Pablo Olivarez vs. Central Córdoba (1-0)</media:title>
+   <media:content url="https://www.youtube.com/v/JPAHa6440iU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/JPAHa6440iU/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="129"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:sQYabZ74nZA</id>
+  <yt:videoId>sQYabZ74nZA</yt:videoId>
+  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
+  <title>Gol #Racing A. Olinik | Relata Bruno Espinosa vs. Estudiantes BA (1-0)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=sQYabZ74nZA"/>
+  <author>
+   <name>Radio Suquía</name>
+   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
+  </author>
+  <published>2026-02-16T00:19:45+00:00</published>
+  <updated>2026-02-16T09:13:45+00:00</updated>
+  <media:group>
+   <media:title>Gol #Racing A. Olinik | Relata Bruno Espinosa vs. Estudiantes BA (1-0)</media:title>
+   <media:content url="https://www.youtube.com/v/sQYabZ74nZA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/sQYabZ74nZA/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="13" average="5.00" min="1" max="5"/>
+    <media:statistics views="832"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:gCpAFOXDNDA</id>
+  <yt:videoId>gCpAFOXDNDA</yt:videoId>
+  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
+  <title>Gol #Belgrano F. Vazquez | Relata Lisandro Espinosa vs. Independiente Rivadavia (0-1)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=gCpAFOXDNDA"/>
+  <author>
+   <name>Radio Suquía</name>
+   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
+  </author>
+  <published>2026-02-16T00:18:13+00:00</published>
+  <updated>2026-02-16T09:27:20+00:00</updated>
+  <media:group>
+   <media:title>Gol #Belgrano F. Vazquez | Relata Lisandro Espinosa vs. Independiente Rivadavia (0-1)</media:title>
+   <media:content url="https://www.youtube.com/v/gCpAFOXDNDA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/gCpAFOXDNDA/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="4" average="5.00" min="1" max="5"/>
+    <media:statistics views="90"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:ye7xg5hH_0w</id>
+  <yt:videoId>ye7xg5hH_0w</yt:videoId>
+  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
+  <title>Gol #Talleres V. Davila | Relata Damián Piazzi vs. Gimnasia (1-0)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=ye7xg5hH_0w"/>
+  <author>
+   <name>Radio Suquía</name>
+   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
+  </author>
+  <published>2026-02-16T00:17:02+00:00</published>
+  <updated>2026-02-16T08:26:59+00:00</updated>
+  <media:group>
+   <media:title>Gol #Talleres V. Davila | Relata Damián Piazzi vs. Gimnasia (1-0)</media:title>
+   <media:content url="https://www.youtube.com/v/ye7xg5hH_0w?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/ye7xg5hH_0w/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Sábado 14 de febrero 2026</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="156"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Rky5X8CLvZI</id>
+  <yt:videoId>Rky5X8CLvZI</yt:videoId>
+  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
+  <title>En Vivo | Racing vs Estudiantes | Fecha 1 - Primera Nacional | Radio Suquia</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=Rky5X8CLvZI"/>
+  <author>
+   <name>Radio Suquía</name>
+   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
+  </author>
+  <published>2026-02-16T12:18:41+00:00</published>
+  <updated>2026-02-16T12:18:41+00:00</updated>
+  <media:group>
+   <media:title>En Vivo | Racing vs Estudiantes | Fecha 1 - Primera Nacional | Radio Suquia</media:title>
+   <media:content url="https://www.youtube.com/v/Rky5X8CLvZI?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/Rky5X8CLvZI/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Relatos: Bruno Espinosa
+Comentarios: Mariano Molina
+Aportes: QAlejandro Pozo
+Estudios: Ariel Sarboraria
+Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
+Puesta al aire en cancha: Christian &quot;Pli Pli&quot; Puyo / Jere Vaca 
+Puesta al aire en estudios: Gerardo Copari 
+Producción: Gonzalo Silva</media:description>
+   <media:community>
+    <media:starRating count="21" average="5.00" min="1" max="5"/>
+    <media:statistics views="1334"/>
    </media:community>
   </media:group>
  </entry>
@@ -64,8 +239,8 @@ Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
 Puesta al aire en estudios: Gerardo Copari 
 Producción: Gonzalo Silva</media:description>
    <media:community>
-    <media:starRating count="97" average="5.00" min="1" max="5"/>
-    <media:statistics views="10681"/>
+    <media:starRating count="98" average="5.00" min="1" max="5"/>
+    <media:statistics views="10727"/>
    </media:community>
   </media:group>
  </entry>
@@ -94,7 +269,7 @@ Puesta al aire en estudios: Gerardo Copari
 Producción: Gonzalo Silva</media:description>
    <media:community>
     <media:starRating count="44" average="5.00" min="1" max="5"/>
-    <media:statistics views="5351"/>
+    <media:statistics views="5370"/>
    </media:community>
   </media:group>
  </entry>
@@ -123,7 +298,7 @@ Grabado en vivo, miércoles 11 de febrero 2026
 Suscribite a nuestro canal de YouTube y no te pierdas todo el contenido exclusivo!</media:description>
    <media:community>
     <media:starRating count="14" average="5.00" min="1" max="5"/>
-    <media:statistics views="168"/>
+    <media:statistics views="176"/>
    </media:community>
   </media:group>
  </entry>
@@ -151,7 +326,7 @@ Puesta al aire en estudios: Gerardo Copari
 Producción: Gonzalo Silva</media:description>
    <media:community>
     <media:starRating count="63" average="5.00" min="1" max="5"/>
-    <media:statistics views="8427"/>
+    <media:statistics views="8429"/>
    </media:community>
   </media:group>
  </entry>
@@ -180,7 +355,7 @@ Puesta al aire en estudios: Gerardo Copari
 Producción: Gonzalo Silva</media:description>
    <media:community>
     <media:starRating count="33" average="5.00" min="1" max="5"/>
-    <media:statistics views="3989"/>
+    <media:statistics views="3996"/>
    </media:community>
   </media:group>
  </entry>
@@ -210,7 +385,7 @@ Puesta al aire en estudios: Jere Vaca
 Producción: Gonzalo Silva</media:description>
    <media:community>
     <media:starRating count="62" average="5.00" min="1" max="5"/>
-    <media:statistics views="5441"/>
+    <media:statistics views="5443"/>
    </media:community>
   </media:group>
  </entry>
@@ -233,206 +408,7 @@ Producción: Gonzalo Silva</media:description>
    <media:description>Sábado 7 de febrero de 2026.</media:description>
    <media:community>
     <media:starRating count="37" average="5.00" min="1" max="5"/>
-    <media:statistics views="1093"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:cfcVDxVxSA0</id>
-  <yt:videoId>cfcVDxVxSA0</yt:videoId>
-  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
-  <title>Gol #Talleres G. Baroni | Relata Pablo Olivarez vs. Argentino M. (1-0)</title>
-  <link rel="alternate" href="https://www.youtube.com/watch?v=cfcVDxVxSA0"/>
-  <author>
-   <name>Radio Suquía</name>
-   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
-  </author>
-  <published>2026-02-05T01:19:50+00:00</published>
-  <updated>2026-02-05T07:21:19+00:00</updated>
-  <media:group>
-   <media:title>Gol #Talleres G. Baroni | Relata Pablo Olivarez vs. Argentino M. (1-0)</media:title>
-   <media:content url="https://www.youtube.com/v/cfcVDxVxSA0?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i4.ytimg.com/vi/cfcVDxVxSA0/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Partido por 32 avos de Copa Argentina.</media:description>
-   <media:community>
-    <media:starRating count="6" average="5.00" min="1" max="5"/>
-    <media:statistics views="501"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:lA0SBa_iqpY</id>
-  <yt:videoId>lA0SBa_iqpY</yt:videoId>
-  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
-  <title>En Vivo | Talleres vs Argentino Merlo | 32° Copa Argentina | Radio Suquia</title>
-  <link rel="alternate" href="https://www.youtube.com/watch?v=lA0SBa_iqpY"/>
-  <author>
-   <name>Radio Suquía</name>
-   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
-  </author>
-  <published>2026-02-05T00:57:06+00:00</published>
-  <updated>2026-02-10T13:42:29+00:00</updated>
-  <media:group>
-   <media:title>En Vivo | Talleres vs Argentino Merlo | 32° Copa Argentina | Radio Suquia</media:title>
-   <media:content url="https://www.youtube.com/v/lA0SBa_iqpY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i1.ytimg.com/vi/lA0SBa_iqpY/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Relatos: Pablo Olivares 
-Comentarios: Mariano Molina
-Aportes: Bruno Bono
-Estudios: Cucho Ríos
-Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
-Puesta al aire en estudios: Jere Vaca
-Producción: Gonzalo Silva</media:description>
-   <media:community>
-    <media:starRating count="46" average="5.00" min="1" max="5"/>
-    <media:statistics views="5432"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:wW_nE_Xd1Nc</id>
-  <yt:videoId>wW_nE_Xd1Nc</yt:videoId>
-  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
-  <title>En Vivo | Instituto vs Lanús | Fecha 3 - Apertura 2026 | Radio Suquia</title>
-  <link rel="alternate" href="https://www.youtube.com/watch?v=wW_nE_Xd1Nc"/>
-  <author>
-   <name>Radio Suquía</name>
-   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
-  </author>
-  <published>2026-02-04T03:19:17+00:00</published>
-  <updated>2026-02-04T06:54:55+00:00</updated>
-  <media:group>
-   <media:title>En Vivo | Instituto vs Lanús | Fecha 3 - Apertura 2026 | Radio Suquia</media:title>
-   <media:content url="https://www.youtube.com/v/wW_nE_Xd1Nc?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i4.ytimg.com/vi/wW_nE_Xd1Nc/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Relatos: Bruno Espinosa 
-Comentarios: Juan Ricardo Rodríguez Brizuela
-Aportes: Kevin Cima
-Estudios: Cucho Ríos
-Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
-Puesta al aire en cancha: Christian &quot;Pli Pli&quot; Puyo 
-Puesta al aire en estudios: Jere Vaca
-Producción: Gonzalo Silva</media:description>
-   <media:community>
-    <media:starRating count="34" average="5.00" min="1" max="5"/>
-    <media:statistics views="3706"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:UJuhyAJqXj4</id>
-  <yt:videoId>UJuhyAJqXj4</yt:videoId>
-  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
-  <title>En Vivo | Argentinos Jr. vs Belgrano | Fecha 3 - Apertura 2026 | Radio Suquia</title>
-  <link rel="alternate" href="https://www.youtube.com/watch?v=UJuhyAJqXj4"/>
-  <author>
-   <name>Radio Suquía</name>
-   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
-  </author>
-  <published>2026-02-03T03:21:20+00:00</published>
-  <updated>2026-02-13T14:52:43+00:00</updated>
-  <media:group>
-   <media:title>En Vivo | Argentinos Jr. vs Belgrano | Fecha 3 - Apertura 2026 | Radio Suquia</media:title>
-   <media:content url="https://www.youtube.com/v/UJuhyAJqXj4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i2.ytimg.com/vi/UJuhyAJqXj4/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Relatos: Lisandro Espinosa
-Comentarios: Juan Ricardo Rodríguez Brizuela 
-Aportes: Bruno Bono
-Estudios: Cucho Ríos
-Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
-Puesta al aire en estudios: Jere Vaca
-Producción: Gonzalo Silva</media:description>
-   <media:community>
-    <media:starRating count="60" average="5.00" min="1" max="5"/>
-    <media:statistics views="6833"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:n980rlV2xAM</id>
-  <yt:videoId>n980rlV2xAM</yt:videoId>
-  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
-  <title>En Vivo | Talleres vs Platense | Fecha 3 - Apertura 2026 | Radio Suquia</title>
-  <link rel="alternate" href="https://www.youtube.com/watch?v=n980rlV2xAM"/>
-  <author>
-   <name>Radio Suquía</name>
-   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
-  </author>
-  <published>2026-02-01T03:41:18+00:00</published>
-  <updated>2026-02-01T07:48:13+00:00</updated>
-  <media:group>
-   <media:title>En Vivo | Talleres vs Platense | Fecha 3 - Apertura 2026 | Radio Suquia</media:title>
-   <media:content url="https://www.youtube.com/v/n980rlV2xAM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i3.ytimg.com/vi/n980rlV2xAM/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Relatos: Damián Piazzi
-Comentarios: Mariano Molina
-Aportes: Kevin Cima
-Estudios: Ariel Sarboraria
-Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
-Puesta al aire en cancha: Christian &quot;Pli Pli&quot; Puyo 
-Puesta al aire en estudios: Jere Vaca
-Producción: Gonzalo Silva</media:description>
-   <media:community>
-    <media:starRating count="44" average="5.00" min="1" max="5"/>
-    <media:statistics views="5958"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:DyIibtOrMDw</id>
-  <yt:videoId>DyIibtOrMDw</yt:videoId>
-  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
-  <title>En Vivo | Belgrano vs Tigre | Fecha 2 - Apertura 2026 | Radio Suquia</title>
-  <link rel="alternate" href="https://www.youtube.com/watch?v=DyIibtOrMDw"/>
-  <author>
-   <name>Radio Suquía</name>
-   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
-  </author>
-  <published>2026-01-30T01:04:26+00:00</published>
-  <updated>2026-02-01T21:08:51+00:00</updated>
-  <media:group>
-   <media:title>En Vivo | Belgrano vs Tigre | Fecha 2 - Apertura 2026 | Radio Suquia</media:title>
-   <media:content url="https://www.youtube.com/v/DyIibtOrMDw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i1.ytimg.com/vi/DyIibtOrMDw/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Relatos: Damián Piazzi
-Comentarios: Juan Rodríguez Brizuela
-Aportes: Bruno Bono
-Estudios: Cucho Ríos
-Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
-Puesta al aire en cancha: Christian &quot;Pli Pli&quot; Puyo 
-Puesta al aire en estudios: Jere Vaca
-Producción: Gonzalo Silva</media:description>
-   <media:community>
-    <media:starRating count="72" average="5.00" min="1" max="5"/>
-    <media:statistics views="7341"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:xbn55GqsLAI</id>
-  <yt:videoId>xbn55GqsLAI</yt:videoId>
-  <yt:channelId>UCcl6jt4C1zpWjYsOHhDjNhQ</yt:channelId>
-  <title>En Vivo | Velez vs Talleres | Fecha 2 - Apertura 2026 | Radio Suquia</title>
-  <link rel="alternate" href="https://www.youtube.com/watch?v=xbn55GqsLAI"/>
-  <author>
-   <name>Radio Suquía</name>
-   <uri>https://www.youtube.com/channel/UCcl6jt4C1zpWjYsOHhDjNhQ</uri>
-  </author>
-  <published>2026-01-27T23:09:11+00:00</published>
-  <updated>2026-02-01T17:20:45+00:00</updated>
-  <media:group>
-   <media:title>En Vivo | Velez vs Talleres | Fecha 2 - Apertura 2026 | Radio Suquia</media:title>
-   <media:content url="https://www.youtube.com/v/xbn55GqsLAI?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i1.ytimg.com/vi/xbn55GqsLAI/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Relatos: Pablo Olivares 
-Comentarios: Mariano Molina
-Aportes: Kevin Cima
-Transmisión de Youtube: Elea &quot;La Griega&quot; Anestiades
-Puesta al aire en estudios: Jere Vaca
-Producción: Gonzalo Silva</media:description>
-   <media:community>
-    <media:starRating count="63" average="5.00" min="1" max="5"/>
-    <media:statistics views="8074"/>
+    <media:statistics views="1113"/>
    </media:community>
   </media:group>
  </entry>
