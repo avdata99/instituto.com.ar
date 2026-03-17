@@ -85,6 +85,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://instituto.com.ar/videos/clausuraron-alberdi-gano-instituto-futbolemico-la-mesa-el-show-y-ultima-jugada-en-vivo-170326/</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://instituto.com.ar/videos/clima-caliente-en-los-minutos-finales-de-talleres-instituto/</loc>
         <lastmod>2026-03-17</lastmod>
         <changefreq>weekly</changefreq>
@@ -104,6 +110,12 @@
     </url>
     <url>
         <loc>https://instituto.com.ar/videos/conferencia-de-prensa-bruno-martelotto-y-daniel-jimenez-fecha-3/</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://instituto.com.ar/videos/conferencia-de-prensa-de-diego-flores-fecha-11-independiente/</loc>
         <lastmod>2026-03-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -745,6 +757,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://instituto.com.ar/videos/la-cadena-del-gol-programa-173-toda-la-info-de-talleres-belgrano-e-instituto-cadena-3/</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://instituto.com.ar/videos/la-cadena-del-gol-programa-182-toda-la-info-de-talleres-belgrano-e-instituto-cadena-3/</loc>
         <lastmod>2026-03-17</lastmod>
         <changefreq>weekly</changefreq>
@@ -949,7 +967,19 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://instituto.com.ar/videos/renacio-instituto-golpeo-a-independiente-y-va-por-boca/</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://instituto.com.ar/videos/rick-puso-el-segundo-y-talleres-se-llevo-el-clasico-ante-instituto-en-el-kempes-cadena-3/</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://instituto.com.ar/videos/sancion-el-gigante-de-alberdi-instituto-le-gano-a-independiente/</loc>
         <lastmod>2026-03-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
